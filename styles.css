@@ -751,6 +751,195 @@ li {
   color: var(--muted);
 }
 
+/* ---------- Stone Worth AI result mockup (product-specific) ---------- */
+.swa-mock {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: 0 24px 50px rgba(20, 30, 50, 0.16),
+    0 4px 14px rgba(20, 30, 50, 0.08);
+  overflow: hidden;
+}
+
+.swa-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #16335f, #244e9c);
+  color: #fff;
+}
+
+.swa-head .swa-logo {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 1.1rem;
+}
+
+.swa-head .swa-app {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.swa-head .swa-screen {
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+.swa-body {
+  padding: 18px 20px 22px;
+}
+
+.swa-result-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.swa-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: linear-gradient(180deg, #fbfcfe, #f6f8fb);
+}
+
+.swa-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.swa-thumb {
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #dfe7f5, #c9d6ee 55%, #b9c8e6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+
+.swa-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 6px;
+  background: radial-gradient(
+    circle at 35% 30%,
+    rgba(255, 255, 255, 0.85),
+    rgba(124, 148, 190, 0.45) 70%
+  );
+}
+
+.swa-candidate .swa-cand-label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.swa-candidate .swa-cand-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.25;
+}
+
+.swa-candidate .swa-cand-sub {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.swa-score-block {
+  margin-top: 16px;
+}
+
+.swa-score-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.swa-score-row .swa-score-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.swa-score-row .swa-score-val {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #1c7a4a;
+}
+
+.swa-score-bar {
+  height: 10px;
+  border-radius: 999px;
+  background: #e9eef6;
+  overflow: hidden;
+}
+
+.swa-score-bar > i {
+  display: block;
+  height: 100%;
+  width: 78%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #34c77b, #2f9e63);
+}
+
+.swa-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.swa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 5px 11px;
+  border-radius: 999px;
+}
+
+.swa-badge.green {
+  color: #1c7a4a;
+  background: #e4f7ed;
+  border: 1px solid #b9e8cd;
+}
+
+.swa-badge.blue {
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  border: 1px solid #cfe0ff;
+}
+
+.swa-badge.gold {
+  color: var(--gold);
+  background: var(--gold-soft);
+  border: 1px solid #ecdaae;
+}
+
+.swa-foot {
+  margin-top: 16px;
+  font-size: 0.74rem;
+  color: var(--muted);
+  text-align: center;
+}
+
 /* ---------- How it works (steps) ---------- */
 .steps {
   display: grid;
