@@ -156,6 +156,18 @@ a:hover {
   border-color: #cfe0ff;
 }
 
+.btn.flip {
+  background: #fff;
+  color: #3d2a0a;
+  border-color: #7a5218;
+  box-shadow: none;
+}
+
+.btn.flip:hover {
+  background: #f2e8d5;
+  border-color: #3d2a0a;
+}
+
 .btn[disabled],
 .btn.is-disabled {
   background: #eef1f6;
