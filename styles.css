@@ -532,6 +532,8 @@ li {
     border-color 0.18s ease;
   display: flex;
   flex-direction: column;
+  color: var(--text);
+  text-decoration: none;
 }
 
 .product-card.live:hover {
@@ -542,6 +544,29 @@ li {
 
 .product-card.soon {
   background: linear-gradient(180deg, #fbfcfe, #f6f8fb);
+}
+
+/* Outer <a> is the stable hit area — no visual appearance, never moves */
+a.product-card.soon {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Inner wrapper carries all visual card appearance and lifts on hover */
+.pc-lift {
+  position: relative;
+  background: linear-gradient(180deg, #fbfcfe, #f6f8fb);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    border-color 0.18s ease;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .pc-icon {
@@ -1061,16 +1086,12 @@ li {
   color: var(--accent);
 }
 
-/* Stretched-link utility — makes nearest position:relative ancestor fully clickable */
-.stretched-link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  border-radius: inherit;
-}
 
 .product-card.soon:hover {
+  text-decoration: none;
+}
+
+.product-card.soon:hover .pc-lift {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
   border-color: #ecdaae;
