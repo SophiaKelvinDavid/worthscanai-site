@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WorthScan AI — AI-powered educational field checks</title>
+    <title>WorthScan AI — AI tools for smarter item decisions</title>
     <meta
       name="description"
-      content="WorthScan AI helps users perform quick educational checks using photos and simple item details. Current app: Stone Worth AI."
+      content="WorthScan AI is home to two focused mobile apps: Flip Worth AI for resale research and Stone Worth AI for exploring rocks, minerals, and crystals."
     />
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -14,187 +14,205 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="/"><span class="logo">W</span> WorthScan AI</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
         <nav class="site-nav">
           <a href="/">Home</a>
+          <a href="/flip-worth-ai/">Flip Worth AI</a>
           <a href="/stone-worth-ai">Stone Worth AI</a>
           <a href="/support">Support</a>
         </nav>
       </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Hero: brief umbrella-brand intro -->
     <section class="hero">
       <div class="wrap">
         <div class="hero-copy">
-          <span class="eyebrow"><span class="dot"></span> Educational tools, not appraisals</span>
-          <h1>AI-powered <span class="grad">educational field checks</span></h1>
+          <span class="eyebrow"><span class="dot"></span> WorthScan AI</span>
+          <h1>AI tools for <span class="grad">smarter item decisions</span></h1>
           <p class="sub">
-            WorthScan AI helps users perform quick educational checks using
-            photos and simple item details.
+            WorthScan AI is home to two focused mobile apps: Flip Worth AI
+            for resale research and Stone Worth AI for exploring rocks,
+            minerals, and crystals.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="/stone-worth-ai">Explore Stone Worth AI</a>
             <a class="btn flip" href="/flip-worth-ai/">Explore Flip Worth AI</a>
-            <a class="btn secondary" href="#why">Why WorthScan AI</a>
+            <a class="btn" href="/stone-worth-ai">Explore Stone Worth AI</a>
           </div>
           <p class="hero-fine">
-            Educational guidance only — not a certified appraisal or
-            identification service.
+            AI-assisted guidance to support your own research — not a
+            certified appraisal or a guarantee of value.
           </p>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="phone">
-            <div class="phone-screen">
-              <div class="ps-top">
-                <div class="ps-app">Stone Worth AI</div>
-                <div class="ps-title">Field check</div>
-              </div>
-              <div class="ps-photo"><span>Your photo</span></div>
-              <div class="ps-body">
-                <div class="ps-row">
-                  <span class="ps-label">Possible candidates</span>
-                  <span class="ps-val">3 matches</span>
-                </div>
-                <div class="ps-row">
-                  <span class="ps-label">Worth-checking</span>
-                  <span class="ps-score">● High</span>
-                </div>
-                <div class="ps-bar"><i></i></div>
-                <div class="ps-row">
-                  <span class="ps-label">Value / rarity</span>
-                  <span class="ps-val">Guidance</span>
-                </div>
-              </div>
+          <div class="duo-visual">
+            <!-- Screenshot slot: swap for an official Flip Worth AI app screenshot when available -->
+            <div class="duo-card duo-flip" data-screenshot-slot="flip-worth-ai">
+              <div class="duo-icon">🔁</div>
+              <div class="duo-name">Flip Worth AI</div>
+              <div class="duo-tag">Resale research</div>
+            </div>
+            <!-- Screenshot slot: swap for an official Stone Worth AI app screenshot when available -->
+            <div class="duo-card duo-stone" data-screenshot-slot="stone-worth-ai">
+              <div class="duo-icon">🪨</div>
+              <div class="duo-name">Stone Worth AI</div>
+              <div class="duo-tag">Rock &amp; mineral exploration</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Products -->
-    <section class="section">
+    <!-- Two-product split section -->
+    <section class="section" id="apps">
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow-c">Our apps</span>
-          <h2>Field-check apps under one brand</h2>
-          <p>
-            WorthScan AI is an umbrella brand for AI-powered educational
-            field-check apps.
-          </p>
+          <h2>Two apps. Two ways to discover value.</h2>
+          <p>Each app is built around a different kind of find.</p>
         </div>
 
         <div class="product-grid">
-          <article class="product-card live">
-            <div class="pc-icon">🪨</div>
-            <h3>Stone Worth AI</h3>
+          <article class="product-card">
+            <div class="pc-icon gold">🔁</div>
+            <h3>Flip Worth AI</h3>
             <p>
-              A WorthScan AI app — an educational field check for stones,
-              minerals, crystals, and polished specimens. Upload a photo, answer
-              a few questions, get cautious guidance.
+              Turn a photo into resale research — so you can decide faster,
+              with more confidence.
             </p>
+            <ul class="pc-features">
+              <li>Analyze secondhand items from photos</li>
+              <li>Review estimated resale potential</li>
+              <li>Make faster decisions before buying</li>
+            </ul>
             <div class="pc-cta">
-              <a class="btn" href="/stone-worth-ai">Learn more</a>
+              <a class="btn flip" href="/flip-worth-ai/">Explore Flip Worth AI</a>
             </div>
           </article>
 
-          <a class="product-card soon" href="/flip-worth-ai/">
-            <div class="pc-lift">
-              <div class="pc-icon gold">🔁</div>
-              <h3>Flip Worth AI</h3>
-              <p>
-                A WorthScan AI app for everyday resale finds, thrift
-                discoveries, garage sale items, and secondhand checks.
-              </p>
-              <div class="pc-cta">
-                <span class="btn secondary">Learn more</span>
-              </div>
+          <article class="product-card">
+            <div class="pc-icon">🪨</div>
+            <h3>Stone Worth AI</h3>
+            <p>
+              Turn a photo into a closer look at what you've found — rocks,
+              minerals, and crystals included.
+            </p>
+            <ul class="pc-features">
+              <li>Explore possible stone or mineral identification</li>
+              <li>Review visible characteristics and details</li>
+              <li>Get value and rarity guidance where available</li>
+            </ul>
+            <div class="pc-cta">
+              <a class="btn" href="/stone-worth-ai">Explore Stone Worth AI</a>
             </div>
-          </a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Why WorthScan AI -->
-    <section class="section alt" id="why">
+    <!-- Short WorthScan AI section -->
+    <section class="section alt" id="about">
       <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow-c">Why WorthScan AI</span>
-          <h2>Built to inform, not to overpromise</h2>
+          <span class="eyebrow-c">About</span>
+          <h2>One brand, two focused apps</h2>
           <p>
-            Quick, photo-based checks designed to help you decide what may be
-            worth a closer look.
+            WorthScan AI is the umbrella brand behind focused mobile AI
+            tools — currently Flip Worth AI and Stone Worth AI.
           </p>
         </div>
+      </div>
+    </section>
 
-        <div class="feature-grid">
+    <!-- Responsible use: kept brief and calm, after product value -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow-c">Good to know</span>
+          <h2>A quick note on how to use your results</h2>
+        </div>
+
+        <div class="feature-grid cols-3">
           <div class="feature">
-            <div class="f-icon">🔎</div>
-            <h3>Educational guidance</h3>
-            <p>Cautious field-check guidance to point you in the right direction.</p>
+            <div class="f-icon">🤖</div>
+            <h3>AI-assisted guidance</h3>
+            <p>Results come from AI analysis of your photos and details — a helpful starting point.</p>
           </div>
           <div class="feature">
             <div class="f-icon">📷</div>
-            <h3>Photo-based checks</h3>
-            <p>Upload one or two photos and answer a few simple questions.</p>
+            <h3>Results may vary</h3>
+            <p>Photo quality, lighting, and item condition all affect accuracy.</p>
           </div>
           <div class="feature">
-            <div class="f-icon">📱</div>
-            <h3>Mobile-friendly</h3>
-            <p>Easy to use on the go, with a clean and simple experience.</p>
-          </div>
-          <div class="feature">
-            <div class="f-icon">⚖️</div>
-            <h3>Honest by design</h3>
-            <p>Not a certified appraisal or identification service.</p>
+            <div class="f-icon">🧭</div>
+            <h3>Verify high-value decisions</h3>
+            <p>Professional verification is recommended for high-value decisions.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA strip -->
+    <!-- Balanced CTA strip -->
     <section class="section cta-strip">
       <div class="wrap">
         <div>
-          <h2>Try an educational field check</h2>
-          <p>Start with Stone Worth AI, our first WorthScan AI app.</p>
+          <h2>Choose the app that fits what you found</h2>
+          <p>
+            Research a secondhand item with Flip Worth AI or explore a
+            rock, mineral, or crystal with Stone Worth AI.
+          </p>
         </div>
-        <a class="btn" href="/stone-worth-ai">Explore Stone Worth AI</a>
+        <div class="cta-strip-actions">
+          <a class="btn flip" href="/flip-worth-ai/">Explore Flip Worth AI</a>
+          <a class="btn" href="/stone-worth-ai">Explore Stone Worth AI</a>
+        </div>
       </div>
     </section>
 
-    <footer class="site-footer">
+    <footer class="site-footer footer-4col">
       <div class="wrap">
         <div class="footer-brand-col">
           <div class="footer-brand">WorthScan AI</div>
           <p class="footer-about">
-            AI-powered educational field-check tools for stones, collectibles,
-            thrift finds, and everyday discoveries.
+            AI-powered tools for secondhand finds, stones, minerals, and
+            everyday discoveries.
           </p>
         </div>
         <div class="footer-col">
           <h4>Apps</h4>
           <nav>
+            <a href="/flip-worth-ai/">Flip Worth AI</a>
             <a href="/stone-worth-ai">Stone Worth AI</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <nav>
             <a href="/support">Support</a>
           </nav>
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
           <nav>
-            <a href="/privacy/stone-worth-ai">Privacy</a>
-            <a href="/terms/stone-worth-ai">Terms</a>
-            <a href="/disclaimer/stone-worth-ai">Disclaimer</a>
+            <a href="/flip-worth-ai/privacy/">Flip Privacy</a>
+            <a href="/flip-worth-ai/terms/">Flip Terms</a>
+            <a href="/flip-worth-ai/disclaimer/">Flip Disclaimer</a>
+            <a href="/privacy/stone-worth-ai">Stone Privacy</a>
+            <a href="/terms/stone-worth-ai">Stone Terms</a>
+            <a href="/disclaimer/stone-worth-ai">Stone Disclaimer</a>
           </nav>
         </div>
       </div>
       <div class="footer-bottom">
         <div class="wrap">
           <div class="contact">
-            Contact:
-            <a href="mailto:stoneworthai.support@gmail.com"
-              >stoneworthai.support@gmail.com</a
-            >
+            Flip support:
+            <a href="mailto:flipworthai.support@gmail.com">flipworthai.support@gmail.com</a>
+            &nbsp;·&nbsp;
+            Stone support:
+            <a href="mailto:stoneworthai.support@gmail.com">stoneworthai.support@gmail.com</a>
           </div>
           <div class="copy">© 2026 WorthScan AI</div>
         </div>

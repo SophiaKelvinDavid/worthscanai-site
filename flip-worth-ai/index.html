@@ -6,7 +6,7 @@
     <title>Flip Worth AI | WorthScan AI</title>
     <meta
       name="description"
-      content="Flip Worth AI is a WorthScan AI educational resale field-check app for secondhand, thrift, garage sale, estate sale, and used items."
+      content="Flip Worth AI helps thrift shoppers, resellers, and side hustlers analyze secondhand items and check resale potential before they buy."
     />
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -14,10 +14,13 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="/"><span class="logo">W</span> WorthScan AI</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
         <nav class="site-nav">
           <a href="/">Home</a>
           <a href="/flip-worth-ai/">Flip Worth AI</a>
-          <a href="/flip-worth-ai/support/">Support</a>
+          <a href="/stone-worth-ai">Stone Worth AI</a>
+          <a href="/support">Support</a>
         </nav>
       </div>
     </header>
@@ -26,32 +29,51 @@
       <div class="wrap">
         <div class="hero-copy">
           <span class="eyebrow"><span class="dot"></span> A WorthScan AI app</span>
-          <h1>Flip Worth AI</h1>
+          <h1>Check resale potential before you buy</h1>
           <p class="sub">
-            Educational resale field checks for secondhand, thrift, garage
-            sale, estate sale, and used items.
+            Flip Worth AI helps thrift shoppers, resellers, and side
+            hustlers analyze secondhand items, review estimated resale
+            information, and make faster buying decisions.
           </p>
           <p>
-            Flip Worth AI helps you organize quick resale-value signals and
-            educational guidance before taking a closer look. It is not a
-            certified appraisal, authentication, or guaranteed price service.
+            Upload or photograph an item to get a possible identification,
+            an estimated resale range or resale signal, and a few suggested
+            next steps — helpful research assistance for your own decisions.
           </p>
+          <div class="store-badges">
+            <a
+              class="store-badge-link"
+              href="https://apps.apple.com/us/app/flip-worth-ai/id6785751227"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Flip Worth AI on the App Store"
+            >
+              <img
+                src="/assets/badges/app-store-badge.svg"
+                alt="Download on the App Store"
+                width="120"
+                height="40"
+              />
+            </a>
+          </div>
           <div class="hero-actions">
+            <a class="btn flip" href="#plans">See Plans</a>
             <a class="btn secondary" href="#legal">Legal &amp; Support</a>
           </div>
           <p class="hero-fine">
-            Educational guidance only — not a certified appraisal or
-            authentication service.
+            Educational guidance only — not a certified appraisal,
+            authentication, or guaranteed price service.
           </p>
         </div>
 
+        <!-- Screenshot slot: illustrative mockup — swap for an official Flip Worth AI app screenshot when available -->
         <div class="hero-visual" aria-hidden="true">
-          <div class="fwa-mock">
+          <div class="fwa-mock" data-screenshot-slot="flip-worth-ai">
             <div class="fwa-head">
               <div class="fwa-logo">🔁</div>
               <div>
                 <div class="fwa-app">Flip Worth AI</div>
-                <div class="fwa-screen">Field Check Result</div>
+                <div class="fwa-screen">Analysis Result</div>
               </div>
             </div>
             <div class="fwa-body">
@@ -75,7 +97,7 @@
                 </div>
 
                 <div class="fwa-badges">
-                  <span class="fwa-badge amber">● Worth checking</span>
+                  <span class="fwa-badge amber">● Resale potential</span>
                   <span class="fwa-badge blue">Resale guidance</span>
                   <span class="fwa-badge gold">Educational only</span>
                 </div>
@@ -111,6 +133,23 @@
             <span class="lc-title">Scan Pack 20</span>
             <span class="lc-sub">One-time scan pack — +20 extra scans for $2.99.</span>
           </div>
+        </div>
+
+        <div class="store-badges tight" style="justify-content: center">
+          <a
+            class="store-badge-link"
+            href="https://apps.apple.com/us/app/flip-worth-ai/id6785751227"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Flip Worth AI on the App Store"
+          >
+            <img
+              src="/assets/badges/app-store-badge.svg"
+              alt="Download on the App Store"
+              width="120"
+              height="40"
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -163,8 +202,8 @@
         <div class="footer-brand-col">
           <div class="footer-brand">WorthScan AI</div>
           <p class="footer-about">
-            AI-powered educational field-check tools for thrift finds,
-            secondhand discoveries, and everyday items.
+            AI-powered resale research for thrift finds, secondhand
+            discoveries, and everyday items.
           </p>
         </div>
         <div class="footer-col">
