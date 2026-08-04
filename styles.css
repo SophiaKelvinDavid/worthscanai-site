@@ -479,6 +479,14 @@ li {
   display: grid;
   place-items: center;
   font-size: 1.6rem;
+  overflow: hidden;
+}
+
+.duo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
 }
 
 .duo-flip .duo-icon {
@@ -703,6 +711,14 @@ li {
   margin-bottom: 16px;
   background: var(--accent-soft);
   border: 1px solid #d8e5ff;
+  overflow: hidden;
+}
+
+.pc-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
 }
 
 .pc-icon.gold {
@@ -965,6 +981,14 @@ li {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.16);
   font-size: 1.1rem;
+  overflow: hidden;
+}
+
+.swa-head .swa-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
 }
 
 .swa-head .swa-app {
@@ -1275,6 +1299,14 @@ li {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.16);
   font-size: 1.1rem;
+  overflow: hidden;
+}
+
+.fwa-head .fwa-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
 }
 
 .fwa-head .fwa-app {
