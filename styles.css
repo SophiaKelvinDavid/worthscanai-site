@@ -47,6 +47,16 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.link-card:focus-visible,
+.nav-toggle-input:focus-visible ~ .nav-toggle {
+  outline: 3px solid var(--accent-dark);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .wrap {
   max-width: var(--max);
   margin: 0 auto;
@@ -118,6 +128,55 @@ a:hover {
 .site-nav a:hover {
   color: var(--text);
   text-decoration: none;
+}
+
+/* Mobile nav toggle — checkbox hack, no JS */
+.nav-toggle-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.nav-toggle {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.nav-toggle span,
+.nav-toggle::before,
+.nav-toggle::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  right: 9px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--text);
+}
+
+.nav-toggle::before {
+  top: 13px;
+}
+
+.nav-toggle span {
+  top: 19px;
+}
+
+.nav-toggle::after {
+  top: 25px;
 }
 
 /* ---------- Buttons ---------- */
@@ -357,10 +416,90 @@ li {
   color: var(--muted);
 }
 
+/* ---------- Store badges ---------- */
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 16px;
+  row-gap: 10px;
+  margin: 4px 0 20px;
+}
+
+.store-badges.tight {
+  margin-top: 18px;
+}
+
+.store-badge-link {
+  display: inline-flex;
+  line-height: 0;
+  border-radius: 8px;
+}
+
+.store-badge-link img {
+  display: block;
+  height: 48px;
+  width: auto;
+  max-width: 100%;
+}
+
 /* ---------- Home: phone mockup ---------- */
 .hero-visual {
   display: flex;
   justify-content: center;
+}
+
+/* ---------- Home: balanced two-app visual ---------- */
+.duo-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.duo-card {
+  width: 190px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.duo-card:nth-child(2) {
+  transform: translateY(28px);
+}
+
+.duo-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+}
+
+.duo-flip .duo-icon {
+  background: var(--gold-soft);
+  border: 1px solid #ecdaae;
+}
+
+.duo-stone .duo-icon {
+  background: var(--accent-soft);
+  border: 1px solid #d8e5ff;
+}
+
+.duo-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.duo-tag {
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .phone {
@@ -548,37 +687,10 @@ li {
   text-decoration: none;
 }
 
-.product-card.live:hover {
+.product-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
   border-color: #cfe0ff;
-}
-
-.product-card.soon {
-  background: linear-gradient(180deg, #fbfcfe, #f6f8fb);
-}
-
-/* Outer <a> is the stable hit area — no visual appearance, never moves */
-a.product-card.soon {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-}
-
-/* Inner wrapper carries all visual card appearance and lifts on hover */
-.pc-lift {
-  position: relative;
-  background: linear-gradient(180deg, #fbfcfe, #f6f8fb);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 28px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.18s ease, box-shadow 0.18s ease,
-    border-color 0.18s ease;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
 }
 
 .pc-icon {
@@ -611,6 +723,17 @@ a.product-card.soon {
 
 .product-card .pc-cta {
   margin-top: auto;
+}
+
+.pc-features {
+  margin: 0 0 20px;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.pc-features li {
+  margin-bottom: 6px;
 }
 
 .badge {
@@ -675,6 +798,10 @@ a.product-card.soon {
   margin: 0;
 }
 
+.feature-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* Home CTA strip */
 .cta-strip .wrap {
   background: linear-gradient(135deg, #16335f, #244e9c);
@@ -709,6 +836,21 @@ a.product-card.soon {
   background: #eef3ff;
 }
 
+.cta-strip .btn.flip {
+  background: #fff;
+  color: #7a5218;
+}
+
+.cta-strip .btn.flip:hover {
+  background: #f2e8d5;
+}
+
+.cta-strip-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--surface);
@@ -722,6 +864,11 @@ a.product-card.soon {
   gap: 32px;
   padding-top: 48px;
   padding-bottom: 36px;
+}
+
+/* Homepage footer carries an extra balanced column (Apps / Support / Legal) */
+.site-footer.footer-4col .wrap {
+  grid-template-columns: 1.2fr 0.8fr 0.8fr 1.1fr;
 }
 
 .site-footer .footer-brand {
@@ -1098,17 +1245,6 @@ a.product-card.soon {
   color: var(--accent);
 }
 
-
-.product-card.soon:hover {
-  text-decoration: none;
-}
-
-.product-card.soon:hover .pc-lift {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: #ecdaae;
-}
-
 /* ---------- Flip Worth AI result mockup (product-specific) ---------- */
 .fwa-mock {
   position: relative;
@@ -1319,11 +1455,15 @@ a.product-card.soon {
   .hero-actions {
     justify-content: center;
   }
+  .store-badges {
+    justify-content: center;
+  }
   .hero-copy .eyebrow {
     margin-left: auto;
     margin-right: auto;
   }
-  .feature-grid {
+  .feature-grid,
+  .feature-grid.cols-3 {
     grid-template-columns: repeat(2, 1fr);
   }
   .site-footer .wrap {
@@ -1332,9 +1472,45 @@ a.product-card.soon {
   .footer-brand-col {
     grid-column: 1 / -1;
   }
+  .site-footer.footer-4col .wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile nav toggle activates here — shared header on Home, Flip, Stone */
+@media (max-width: 760px) {
+  .nav-toggle {
+    display: inline-block;
+    order: 2;
+  }
+  .site-nav {
+    display: none;
+    flex-basis: 100%;
+    order: 3;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding-top: 6px;
+  }
+  .site-nav a {
+    width: 100%;
+    padding: 10px 4px;
+  }
+  .nav-toggle-input:checked ~ .site-nav {
+    display: flex;
+  }
 }
 
 @media (max-width: 560px) {
+  .duo-visual {
+    flex-direction: column;
+  }
+  .duo-card:nth-child(2) {
+    transform: none;
+  }
+  .site-footer.footer-4col .wrap {
+    grid-template-columns: 1fr;
+  }
   body {
     font-size: 16px;
   }
@@ -1344,7 +1520,8 @@ a.product-card.soon {
   .product-grid {
     grid-template-columns: 1fr;
   }
-  .feature-grid {
+  .feature-grid,
+  .feature-grid.cols-3 {
     grid-template-columns: 1fr;
   }
   .link-grid {
@@ -1354,10 +1531,6 @@ a.product-card.soon {
     flex-direction: column;
     gap: 14px;
     padding: 22px;
-  }
-  .site-header .wrap {
-    flex-direction: column;
-    align-items: flex-start;
   }
   .cta-strip .wrap {
     padding: 32px 24px;

@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stone Worth AI — Educational field check for stones &amp; minerals</title>
+    <title>Stone Worth AI — Explore rocks, minerals &amp; crystals from a photo</title>
     <meta
       name="description"
-      content="Stone Worth AI is an educational AI field-check app for stones, minerals, crystals, and polished specimens. Upload photos, answer simple questions, get cautious guidance."
+      content="Stone Worth AI helps you review visible characteristics, possible identifications, and value or rarity guidance for stones, minerals, and crystals — from a photo."
     />
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -14,8 +14,11 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="/"><span class="logo">W</span> WorthScan AI</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
         <nav class="site-nav">
           <a href="/">Home</a>
+          <a href="/flip-worth-ai/">Flip Worth AI</a>
           <a href="/stone-worth-ai">Stone Worth AI</a>
           <a href="/support">Support</a>
         </nav>
@@ -27,34 +30,65 @@
       <div class="wrap">
         <div class="hero-copy">
           <span class="eyebrow"><span class="dot"></span> A WorthScan AI app</span>
-          <h1>Stone Worth AI</h1>
+          <h1>Explore rocks, minerals, and crystals from a photo</h1>
           <p class="sub">
-            An educational AI field-check app for stones, minerals, crystals,
-            and polished specimens.
+            Stone Worth AI helps you review visible characteristics,
+            possible identifications, educational details, and value or
+            rarity guidance where available.
           </p>
           <p>
-            Upload one or two photos, answer a few simple questions, and receive
-            cautious AI-generated guidance including possible candidates, info
-            match, worth-checking score, value/rarity guidance, and suggested
-            next steps.
+            Upload one or two photos and answer a few quick questions to get
+            possible candidates, an info match, a worth-checking score, and
+            suggested next steps.
           </p>
+          <div class="store-badges">
+            <a
+              class="store-badge-link"
+              href="https://apps.apple.com/us/app/stone-worth-ai/id6785297712"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Stone Worth AI on the App Store"
+            >
+              <img
+                src="/assets/badges/app-store-badge.svg"
+                alt="Download on the App Store"
+                width="120"
+                height="40"
+              />
+            </a>
+            <a
+              class="store-badge-link"
+              href="https://play.google.com/store/apps/details?id=com.stoneworthai.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Stone Worth AI on Google Play"
+            >
+              <img
+                src="/assets/badges/google-play-badge.png"
+                alt="Get it on Google Play"
+                width="646"
+                height="250"
+              />
+            </a>
+          </div>
           <div class="hero-actions">
-            <a class="btn" href="/privacy/stone-worth-ai">Privacy Policy</a>
+            <a class="btn" href="#plans">See Plans</a>
             <a class="btn secondary" href="/support">Support</a>
           </div>
           <p class="hero-fine">
-            Educational guidance only — not a certified appraisal or
-            identification service.
+            Educational guidance only — not a certified appraisal,
+            identification, or laboratory service.
           </p>
         </div>
 
+        <!-- Screenshot slot: illustrative mockup — swap for an official Stone Worth AI app screenshot when available -->
         <div class="hero-visual" aria-hidden="true">
-          <div class="swa-mock">
+          <div class="swa-mock" data-screenshot-slot="stone-worth-ai">
             <div class="swa-head">
               <div class="swa-logo">🪨</div>
               <div>
                 <div class="swa-app">Stone Worth AI</div>
-                <div class="swa-screen">Field Check Result</div>
+                <div class="swa-screen">Analysis Result</div>
               </div>
             </div>
             <div class="swa-body">
@@ -95,23 +129,24 @@
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow-c">What it does</span>
-          <h2>An educational field check in your pocket</h2>
+          <h2>A faster starting point for stone discovery</h2>
           <p>
-            Quick, photo-based checks to help you decide whether a specimen may
-            be worth a closer look.
+            Upload clear photos, review possible matches, visible
+            characteristics, value or rarity guidance, and suggested next
+            steps.
           </p>
         </div>
 
         <div class="feature-grid">
           <div class="feature">
             <div class="f-icon">📷</div>
-            <h3>Photo-based field checks</h3>
+            <h3>Photo-based analysis</h3>
             <p>Upload one or two photos and answer a few simple questions.</p>
           </div>
           <div class="feature">
             <div class="f-icon">📊</div>
             <h3>Worth-Checking Score</h3>
-            <p>A cautious signal for whether an item may be worth checking further.</p>
+            <p>A quick, cautious signal for how promising an item looks at a glance.</p>
           </div>
           <div class="feature">
             <div class="f-icon">🔬</div>
@@ -160,7 +195,7 @@
     </section>
 
     <!-- Plans & pricing -->
-    <section class="section">
+    <section class="section" id="plans">
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow-c">Plans &amp; pricing</span>
@@ -194,6 +229,37 @@
         <p class="hero-fine" style="text-align: center; margin-top: 24px">
           Download the app to choose a plan.
         </p>
+
+        <div class="store-badges tight" style="justify-content: center">
+          <a
+            class="store-badge-link"
+            href="https://apps.apple.com/us/app/stone-worth-ai/id6785297712"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Stone Worth AI on the App Store"
+          >
+            <img
+              src="/assets/badges/app-store-badge.svg"
+              alt="Download on the App Store"
+              width="120"
+              height="40"
+            />
+          </a>
+          <a
+            class="store-badge-link"
+            href="https://play.google.com/store/apps/details?id=com.stoneworthai.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Stone Worth AI on Google Play"
+          >
+            <img
+              src="/assets/badges/google-play-badge.png"
+              alt="Get it on Google Play"
+              width="646"
+              height="250"
+            />
+          </a>
+        </div>
       </div>
     </section>
 
@@ -205,7 +271,7 @@
           <div>
             <h2>Important: educational use only</h2>
             <p>
-              Stone Worth AI provides educational field-check guidance only. It
+              Stone Worth AI provides educational guidance only. It
               is not a certified appraisal, certified mineral identification,
               laboratory report, or market valuation service.
             </p>
@@ -263,8 +329,8 @@
         <div class="footer-brand-col">
           <div class="footer-brand">WorthScan AI</div>
           <p class="footer-about">
-            AI-powered educational field-check tools for stones, collectibles,
-            thrift finds, and everyday discoveries.
+            AI-powered exploration for stones, minerals, crystals, and
+            everyday discoveries.
           </p>
         </div>
         <div class="footer-col">
