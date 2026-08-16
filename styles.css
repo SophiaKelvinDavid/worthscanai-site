@@ -100,16 +100,9 @@ button:focus-visible,
 }
 
 .brand .logo {
-  display: inline-grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent), #5b8bff);
-  color: #fff;
-  font-size: 0.95rem;
-  font-weight: 800;
-  box-shadow: var(--shadow-sm);
+  display: block;
+  height: 32px;
+  width: auto;
 }
 
 .site-nav {
@@ -903,6 +896,13 @@ li {
   margin: 0;
 }
 
+.footer-logo {
+  display: block;
+  height: 52px;
+  width: auto;
+  margin-top: 16px;
+}
+
 .footer-col h4 {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
@@ -1534,6 +1534,9 @@ li {
 }
 
 @media (max-width: 560px) {
+  .brand .logo {
+    height: 26px;
+  }
   .duo-visual {
     flex-direction: column;
   }
