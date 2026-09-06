@@ -666,6 +666,24 @@ li {
   color: var(--accent);
 }
 
+/* Product demo video */
+.demo-video-frame {
+  max-width: 860px;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  background: #0b1220;
+}
+
+.demo-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
 /* Product cards */
 .product-grid {
   display: grid;
