@@ -1553,6 +1553,11 @@ a.learn-card:hover {
   padding: 4px 11px;
 }
 
+.learn-grid.single {
+  grid-template-columns: minmax(0, 340px);
+  justify-content: center;
+}
+
 .learn-more {
   text-align: center;
   margin-top: 32px;
@@ -1607,6 +1612,10 @@ a.learn-card:hover {
   margin-bottom: 8px;
 }
 
+.compare-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .compare-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -1636,8 +1645,22 @@ a.learn-card:hover {
 }
 
 .image-slot {
-  height: 160px;
   border-radius: 12px;
+  overflow: hidden;
+  background: #eef2f8;
+  margin-bottom: 18px;
+}
+
+.image-slot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.image-slot.placeholder {
+  height: 160px;
   border: 1px dashed var(--border);
   background: linear-gradient(135deg, #eef2f8, #e3e9f3);
   display: grid;
@@ -1646,7 +1669,6 @@ a.learn-card:hover {
   color: var(--muted);
   font-size: 0.8rem;
   font-weight: 600;
-  margin-bottom: 18px;
   padding: 12px;
 }
 
@@ -1726,7 +1748,8 @@ a.learn-card:hover {
   .learn-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .compare-grid {
+  .compare-grid,
+  .compare-grid.cols-3 {
     grid-template-columns: 1fr;
   }
   .hero .wrap {
