@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reseller Tools — Flip Worth AI</title>
+    <meta
+      name="description"
+      content="Reseller Tools in Flip Worth AI helps you run the business side of your flips: inventory, purchase details, item status, sales, a reseller dashboard, and CSV export."
+    />
+    <meta name="theme-color" content="#0b6f6c" />
+    <link rel="canonical" href="https://worthscanai.com/flip-worth-ai/reseller-tools/" />
+    <link rel="icon" href="/assets/apps/flip/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/apps/flip/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/apps/flip/icon-192.png" />
+    <link rel="apple-touch-icon" href="/assets/apps/flip/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WorthScan AI" />
+    <meta property="og:title" content="Reseller Tools — Flip Worth AI" />
+    <meta property="og:description" content="Run the business side of your flips: inventory, purchases, sales, dashboard totals, and CSV export." />
+    <meta property="og:url" content="https://worthscanai.com/flip-worth-ai/reseller-tools/" />
+    <meta property="og:image" content="https://worthscanai.com/assets/apps/flip/flip-worth-ai-og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="flip-page">
+    <!-- Line icon sprite (decorative; referenced with <use>) -->
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3.5"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+      <symbol id="i-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><path d="m12 12 6-6"/></symbol>
+      <symbol id="i-dashboard" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="8" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="5" rx="1.5"/><rect x="13.5" y="11.5" width="7" height="9" rx="1.5"/><rect x="3.5" y="14.5" width="7" height="6" rx="1.5"/></symbol>
+      <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></symbol>
+      <symbol id="i-export" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9.5 14.5 12 17l2.5-2.5"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M8 9.5h8M8 14.5h5"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="m20.5 16-5-5-8 8.5"/></symbol>
+      <symbol id="i-note" viewBox="0 0 24 24"><path d="M5 4h14v11l-5 5H5z"/><path d="M14 20v-5h5M8.5 9h7M8.5 12.5h4"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.2 10.5a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.2"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand flip-brand" href="/flip-worth-ai/">
+          <img class="logo app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="36" height="36" />
+          <span class="brand-text">
+            <span class="brand-name">Flip Worth AI</span>
+            <span class="brand-by">by WorthScan AI</span>
+          </span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
+        <nav class="site-nav" aria-label="Flip Worth AI">
+          <a href="/flip-worth-ai/">Overview</a>
+          <a href="/flip-worth-ai/reseller-tools/" aria-current="page">Reseller Tools</a>
+          <a href="/flip-worth-ai/marketplace-iq/">Marketplace IQ</a>
+          <a href="/flip-worth-ai/#pricing">Pricing</a>
+          <a href="/flip-worth-ai/support/">Support</a>
+          <a class="btn flip nav-cta" href="https://apps.apple.com/us/app/flip-worth-ai/id6785751227" target="_blank" rel="noopener noreferrer">Get the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="flip-main">
+      <!-- ============ HERO ============ -->
+      <section class="hero flip-hero sub-hero">
+        <div class="wrap">
+          <div class="hero-copy">
+            <nav class="crumbs" aria-label="Breadcrumb">
+              <a href="/flip-worth-ai/">Flip Worth AI</a><span aria-hidden="true">/</span><span>Reseller Tools</span>
+            </nav>
+            <span class="area-label"><svg class="ic" aria-hidden="true"><use href="#i-dashboard"/></svg>Reseller Tools</span>
+            <h1>Run the business side <span class="accent">of your flips.</span></h1>
+            <p class="sub">
+              Once you buy an item, Reseller Tools helps you organize inventory
+              and follow it through the resale workflow — from what you paid
+              to what it sold for.
+            </p>
+            <div class="hero-cta">
+              <a
+                class="store-badge-link"
+                href="https://apps.apple.com/us/app/flip-worth-ai/id6785751227"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download Flip Worth AI on the App Store"
+              >
+                <img src="/assets/badges/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" />
+              </a>
+              <a class="btn secondary flip-secondary" href="#how-it-works">See how it works</a>
+            </div>
+            <p class="hero-price"><strong>$12.99/month</strong> or <strong>$119.99/year</strong> · in-app subscription</p>
+          </div>
+
+          <!-- Illustrative mockup: inventory item. Swap for an official screenshot when available. -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="flip-mock">
+              <div class="fm-head">
+                <img src="/assets/apps/flip-worth-ai-icon.png" alt="" width="36" height="36" />
+                <div>
+                  <div class="fm-app">Inventory Item</div>
+                  <div class="fm-screen">Vintage Pyrex mixing bowl set</div>
+                </div>
+              </div>
+              <div class="fm-body">
+                <div class="fm-list-label">Purchase Details</div>
+                <dl class="fm-fields">
+                  <div><dt>Purchase price</dt><dd>$28.00</dd></div>
+                  <div><dt>Purchase date</dt><dd>Sep 12, 2026</dd></div>
+                  <div><dt>Source or store</dt><dd>Estate sale</dd></div>
+                  <div><dt>Notes</dt><dd>Complete set, no chips</dd></div>
+                </dl>
+                <div class="fm-list-label">Status</div>
+                <div class="fm-status">
+                  <span class="on">In stock</span><span>Listed</span><span>Sold</span>
+                </div>
+                <div class="fm-button">Mark as Sold</div>
+                <div class="fm-foot">Illustrative example.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HOW IT WORKS ============ -->
+      <section class="section alt" id="how-it-works" aria-labelledby="how-heading">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow-c">How it works</span>
+            <h2 id="how-heading">Follow every item from purchase to sale</h2>
+            <p>Five steps, all in the Inventory tab of Flip Worth AI.</p>
+          </div>
+
+          <ol class="howto-steps">
+            <li>
+              <span class="howto-num" aria-hidden="true">1</span>
+              <div class="howto-card">
+                <h3>Add to Inventory</h3>
+                <p>
+                  Save a scan to My Finds and tap <strong>Add to Inventory</strong>.
+                  With Marketplace IQ, tap <strong>Bought It</strong> on a deal
+                  and the purchase lands in Inventory for you.
+                </p>
+                <ul class="field-chips" aria-label="Ways to add items">
+                  <li>From a saved scan</li>
+                  <li>From Bought It in Marketplace IQ</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span class="howto-num" aria-hidden="true">2</span>
+              <div class="howto-card">
+                <h3>Record purchase information</h3>
+                <p>
+                  Enter what you paid and where you got it, so every item carries
+                  its own cost. Keep a photo of the receipt with the item.
+                </p>
+                <ul class="field-chips" aria-label="Purchase details">
+                  <li>Purchase price</li>
+                  <li>Purchase date</li>
+                  <li>Source or store</li>
+                  <li>Notes</li>
+                  <li>Receipt photo</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span class="howto-num" aria-hidden="true">3</span>
+              <div class="howto-card">
+                <h3>Track inventory and item status</h3>
+                <p>
+                  See everything you own in one list and update each item's
+                  status as it moves from the shelf to a listing. Filter and
+                  sort to find what you need.
+                </p>
+                <p>
+                  Record selling expenses — marketplace fees, shipping, packaging,
+                  repair or cleaning — against the item they belong to.
+                </p>
+                <ul class="field-chips" aria-label="Item statuses">
+                  <li>In stock</li>
+                  <li>Listed</li>
+                  <li>Sold</li>
+                  <li>Refunded</li>
+                  <li>Archived</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span class="howto-num" aria-hidden="true">4</span>
+              <div class="howto-card">
+                <h3>Mark items sold</h3>
+                <p>
+                  When an item sells, tap <strong>Mark as Sold</strong> and record
+                  the sale. Flip works out that item's net profit, ROI and margin
+                  from your purchase cost and expenses.
+                </p>
+                <p>If a sale is returned, mark it refunded or put the item back in stock.</p>
+                <ul class="field-chips" aria-label="Sale details">
+                  <li>Sale price</li>
+                  <li>Sale date</li>
+                  <li>Where you sold it</li>
+                  <li>Notes</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span class="howto-num" aria-hidden="true">5</span>
+              <div class="howto-card">
+                <h3>Review dashboard totals and export records</h3>
+                <p>
+                  The Reseller Dashboard totals your results for this month, last
+                  month, this year or all time. Export your records to CSV when
+                  you need them in a spreadsheet or for your accountant.
+                </p>
+                <ul class="field-chips" aria-label="Dashboard and export">
+                  <li>Net Profit</li>
+                  <li>Revenue</li>
+                  <li>Selling Expenses</li>
+                  <li>Current Inventory Cost</li>
+                  <li>CSV export</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ DASHBOARD & EXPORT ============ -->
+      <section class="section" id="dashboard" aria-labelledby="dash-heading">
+        <div class="wrap split">
+          <!-- Illustrative mockup: reseller dashboard. Swap for an official screenshot when available. -->
+          <div class="split-visual" aria-hidden="true">
+            <div class="flip-mock">
+              <div class="fm-head">
+                <img src="/assets/apps/flip-worth-ai-icon.png" alt="" width="36" height="36" />
+                <div>
+                  <div class="fm-app">Reseller Dashboard</div>
+                  <div class="fm-screen">This Month</div>
+                </div>
+              </div>
+              <div class="fm-body">
+                <div class="fm-status">
+                  <span class="on">This Month</span><span>Last Month</span><span>This Year</span><span>All Time</span>
+                </div>
+                <div class="fm-stats">
+                  <div><span>Net Profit</span><strong class="pos">$612.40</strong></div>
+                  <div><span>Revenue</span><strong>$1,148.00</strong></div>
+                  <div><span>Selling Expenses</span><strong>$171.60</strong></div>
+                  <div><span>Current Inventory Cost</span><strong>$1,236.00</strong></div>
+                </div>
+                <div class="fm-export"><svg class="ic" aria-hidden="true"><use href="#i-export"/></svg>Export CSV</div>
+                <div class="fm-foot">Illustrative example.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="split-copy">
+            <span class="area-label"><svg class="ic" aria-hidden="true"><use href="#i-dashboard"/></svg>Dashboard &amp; export</span>
+            <h2 id="dash-heading">See how the business is doing</h2>
+            <p class="lead">
+              The Reseller Dashboard adds up your sales, costs and expenses so
+              you can see what you actually made — without building a
+              spreadsheet by hand.
+            </p>
+            <ul class="check-list">
+              <li><strong>Period totals.</strong> Net profit, revenue, selling expenses and current inventory cost for the period you choose.</li>
+              <li><strong>Averages.</strong> Items sold, active inventory, average profit per item, average ROI and average margin.</li>
+              <li><strong>Based on real sales.</strong> Totals reflect sales you've recorded, not guesses about unsold items.</li>
+              <li><strong>CSV export.</strong> Export your financial summary, sales and profit, expenses, and inventory.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CAPABILITIES ============ -->
+      <section class="section alt" id="included" aria-labelledby="incl-heading">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow-c">What's included</span>
+            <h2 id="incl-heading">Everything you track, in one place</h2>
+          </div>
+          <div class="why-grid">
+            <div class="why">
+              <span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg></span>
+              <h3>Inventory</h3>
+              <p>Every item you've bought in one list, with filters and sorting.</p>
+            </div>
+            <div class="why">
+              <span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-receipt"/></svg></span>
+              <h3>Purchase details</h3>
+              <p>Purchase price, purchase date and source or store for each item.</p>
+            </div>
+            <div class="why">
+              <span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-image"/></svg></span>
+              <h3>Images &amp; notes</h3>
+              <p>The item photo from your scan, a receipt photo, and your own notes.</p>
+            </div>
+            <div class="why">
+              <span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg></span>
+              <h3>Item status &amp; expenses</h3>
+              <p>Track what's in stock, listed or sold, and log selling expenses per item.</p>
+            </div>
+            <div class="why">
+              <span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-tag"/></svg></span>
+              <h3>Sold workflow</h3>
+              <p>Record the sale and see that item's net profit, ROI and margin.</p>
+            </div>
+            <div class="why">
+              <span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-export"/></svg></span>
+              <h3>Dashboard &amp; CSV export</h3>
+              <p>Totals by period, and your records ready for a spreadsheet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONNECTS WITH MARKETPLACE IQ ============ -->
+      <section class="section" id="marketplace-iq" aria-labelledby="miq-link-heading">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow-c">Buying online?</span>
+            <h2 id="miq-link-heading">Add Marketplace IQ to find the deals</h2>
+            <p>Marketplace IQ helps you find and evaluate marketplace listings. When you buy one, <strong>Bought It</strong> sends it straight to your Reseller Tools inventory with its purchase price and date.</p>
+          </div>
+          <p class="miq-more">
+            <a class="text-link" href="/flip-worth-ai/marketplace-iq/">Explore Marketplace IQ <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ PRICING ============ -->
+      <section class="section alt" id="pricing" aria-labelledby="pricing-heading">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow-c">Pricing</span>
+            <h2 id="pricing-heading">Reseller Tools pricing</h2>
+            <p>Choose monthly or yearly. Purchases are made in-app through the App Store.</p>
+          </div>
+          <div class="sub-price">
+            <ul class="pfam-plans cols-2">
+              <li class="plan">
+                <span class="plan-name">Reseller Tools Monthly</span>
+                <span class="plan-price">$12.99<small>/month</small></span>
+                <span class="plan-detail">Inventory, sales, dashboard &amp; exports</span>
+                <span class="plan-type">Monthly subscription</span>
+              </li>
+              <li class="plan featured">
+                <span class="plan-name">Reseller Tools Yearly</span>
+                <span class="plan-price">$119.99<small>/year</small></span>
+                <span class="plan-detail">Same tools, billed once a year</span>
+                <span class="plan-type">Yearly subscription</span>
+              </li>
+            </ul>
+            <div class="sub-price-actions">
+              <a class="btn flip" href="https://apps.apple.com/us/app/flip-worth-ai/id6785751227" target="_blank" rel="noopener noreferrer">Get Reseller Tools in the App</a>
+            </div>
+          </div>
+          <p class="price-fine">
+            Prices in USD. Subscriptions renew automatically until cancelled and
+            can be managed in your App Store account settings. Scan plans are
+            sold separately — see <a href="/flip-worth-ai/#pricing">all Flip pricing</a>.
+            See the <a href="/flip-worth-ai/terms/">Terms of Use</a> and
+            <a href="/flip-worth-ai/refunds/">Refund Policy</a> for details.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ FINAL CTA ============ -->
+      <section class="section flip-cta">
+        <div class="wrap">
+          <img class="app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="72" height="72" loading="lazy" />
+          <h2>Keep every flip organized, from purchase to sale.</h2>
+          <p>Open Flip Worth AI and add Reseller Tools in the app.</p>
+          <div class="flip-cta-actions">
+            <a
+              class="store-badge-link"
+              href="https://apps.apple.com/us/app/flip-worth-ai/id6785751227"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Flip Worth AI on the App Store"
+            >
+              <img src="/assets/badges/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" loading="lazy" />
+            </a>
+          </div>
+          <p class="cta-disclaimer">
+            Profit figures are calculated from the numbers you record. Flip is
+            not an accounting or tax service.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer footer-4col flip-footer">
+      <div class="wrap">
+        <div class="footer-brand-col">
+          <div class="footer-brand">
+            <img class="app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="40" height="40" loading="lazy" />
+            Flip Worth AI
+          </div>
+          <p class="footer-about">
+            From finding the flip to running the business. A WorthScan AI app.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <nav aria-label="Product">
+            <a href="/flip-worth-ai/#scan">Scan &amp; Valuation</a>
+            <a href="/flip-worth-ai/reseller-tools/">Reseller Tools</a>
+            <a href="/flip-worth-ai/marketplace-iq/">Marketplace IQ</a>
+            <a href="/flip-worth-ai/#pricing">Pricing</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <nav aria-label="Help">
+            <a href="/flip-worth-ai/support/">Support</a>
+            <a href="/flip-worth-ai/delete-account/">Delete account</a>
+            <a href="/flip-worth-ai/refunds/">Refunds</a>
+            <a href="/">WorthScan AI home</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <nav aria-label="Legal">
+            <a href="/flip-worth-ai/privacy/">Privacy</a>
+            <a href="/flip-worth-ai/terms/">Terms</a>
+            <a href="/flip-worth-ai/disclaimer/">Disclaimer</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrap">
+          <div class="contact">
+            Contact:
+            <a href="mailto:flipworthai.support@gmail.com">flipworthai.support@gmail.com</a>
+          </div>
+          <div class="copy">© 2026 WorthScan AI</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
