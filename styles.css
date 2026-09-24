@@ -1990,14 +1990,16 @@ main.flip-main {
   color: var(--flip-dark);
 }
 
-/* Header brand (Flip page + Flip legal subpages) */
-.flip-brand .app-icon.logo {
+/* Header product brand (shared by Flip + Stone product pages) */
+.flip-brand .app-icon.logo,
+.product-brand .app-icon.logo {
   width: 36px;
   height: 36px;
   box-shadow: 0 1px 3px rgba(11, 47, 51, 0.15);
 }
 
-.flip-brand .brand-text {
+.flip-brand .brand-text,
+.product-brand .brand-text {
   display: flex;
   flex-direction: column;
   line-height: 1.15;
@@ -2009,8 +2011,9 @@ main.flip-main {
   color: var(--flip-ink);
 }
 
-/* Parent-brand return path: WorthScan AI home / Flip Worth AI */
-.flip-brand-group {
+/* Parent-brand return path: WorthScan AI home / <product> */
+.flip-brand-group,
+.product-brand-group {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -3341,6 +3344,32 @@ main.flip-main {
 .flip-sub .site-footer .footer-brand .app-icon {
   width: 40px;
   height: 40px;
+}
+
+/* Product footer identity: [app icon] App name (shared by Flip + Stone) */
+.product-footer .footer-brand .app-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Very narrow phones: keep the product row and menu toggle on one line */
+@media (max-width: 360px) {
+  .product-brand-group {
+    gap: 7px;
+  }
+  .product-brand {
+    gap: 8px;
+    font-size: 1.02rem;
+  }
+}
+
+/* Stone: neutral accents for the shared brand row */
+.stone-brand-group .brand-sep {
+  color: #cfd6df;
+}
+
+.stone-brand-group .parent-brand:hover {
+  color: var(--text);
 }
 
 /* Parent-brand (WorthScan AI) icon in the Flip footer brand block */
