@@ -382,10 +382,15 @@ li {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   line-height: 1.08;
   letter-spacing: -0.03em;
   margin: 0 0 18px;
+  text-wrap: balance;
+}
+
+.stone-hero h1 {
+  font-size: 2.625rem;
 }
 
 .hero h1 .grad {
@@ -2134,7 +2139,7 @@ main.flip-main {
 }
 
 .flip-hero h1 {
-  font-size: 3.25rem;
+  font-size: 3rem;
   color: var(--flip-ink);
 }
 
