@@ -18,12 +18,26 @@
   <body class="flip-sub">
     <header class="site-header">
       <div class="wrap">
-        <a class="brand flip-brand" href="/flip-worth-ai/"><img class="logo app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="32" height="32" /><span class="brand-text"><span class="brand-name">Flip Worth AI</span><span class="brand-by">by WorthScan AI</span></span></a>
+        <div class="flip-brand-group">
+          <a class="parent-brand" href="/" aria-label="WorthScan AI home" title="Back to WorthScan AI home">
+            <img class="logo" src="/assets/worthscan-ai-logo.png" alt="" width="28" height="28" />
+            <span class="parent-brand-name">WorthScan AI</span>
+          </a>
+          <span class="brand-sep" aria-hidden="true">/</span>
+          <a class="brand flip-brand" href="/flip-worth-ai/">
+            <img class="logo app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="32" height="32" />
+            <span class="brand-text">
+              <span class="brand-name">Flip Worth AI</span>
+            </span>
+          </a>
+        </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
         <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
-        <nav class="site-nav">
-          <a href="/">Home</a>
-          <a href="/flip-worth-ai/">Flip Worth AI</a>
+        <nav class="site-nav" aria-label="Flip Worth AI">
+          <a href="/flip-worth-ai/">Overview</a>
+          <a href="/flip-worth-ai/reseller-tools/">Reseller Tools</a>
+          <a href="/flip-worth-ai/marketplace-iq/">Marketplace IQ</a>
+          <a href="/flip-worth-ai/#pricing">Pricing</a>
           <a href="/flip-worth-ai/support/">Support</a>
         </nav>
       </div>
@@ -31,7 +45,7 @@
 
     <main>
       <h1>Refund Policy — Flip Worth AI</h1>
-      <p class="updated">Last updated: July 16, 2026</p>
+      <p class="updated">Last updated: September 23, 2026</p>
 
       <p>
         This page describes the refund, purchase, and cancellation policy for
@@ -40,12 +54,30 @@
 
       <h2>Purchases through the App Store</h2>
       <p>
-        Flip Worth AI offers optional purchases: the Starter Monthly
-        subscription (30 scans/month, $4.99/month), the Plus Monthly
-        subscription (100 scans/month, $9.99/month), and the one-time Scan
-        Pack 20 (+20 scans, $2.99). All subscriptions and scan packs are
-        processed through the Apple App Store.
+        Flip Worth AI offers optional in-app purchases. All subscriptions and
+        one-time purchases are processed through the Apple App Store. Prices
+        are in USD.
       </p>
+
+      <h3>Recurring subscriptions</h3>
+      <ul>
+        <li><strong>Starter Monthly</strong> — $4.99/month, 30 scans/month.</li>
+        <li><strong>Plus Monthly</strong> — $9.99/month, 100 scans/month.</li>
+        <li><strong>Reseller Tools Monthly</strong> — $12.99/month.</li>
+        <li><strong>Reseller Tools Yearly</strong> — $119.99/year.</li>
+        <li>
+          <strong>Marketplace IQ Monthly</strong> — $7.99/month. Requires an
+          active Reseller Tools subscription.
+        </li>
+      </ul>
+
+      <h3>One-time purchase</h3>
+      <ul>
+        <li>
+          <strong>Scan Pack 20</strong> — $2.99, +20 extra scans. Does not
+          renew and does not require a subscription.
+        </li>
+      </ul>
 
       <h2>Refunds</h2>
       <p>
@@ -58,7 +90,17 @@
       <h2>Cancellations</h2>
       <p>
         Subscriptions renew automatically at the end of each billing period
-        unless cancelled beforehand in your Apple account settings.
+        unless cancelled beforehand in your Apple account settings. Cancelling
+        stops future renewals; access generally continues until the end of the
+        current billing period. Scan Pack 20 is a one-time purchase, so there
+        is nothing to cancel.
+      </p>
+      <p>
+        Marketplace IQ requires an active Reseller Tools subscription.
+        Cancelling Reseller Tools does not automatically cancel a Marketplace
+        IQ subscription, but Marketplace IQ features are unavailable while
+        Reseller Tools is inactive. Manage each subscription in your Apple
+        account settings.
       </p>
 
       <h2>Questions</h2>
@@ -72,30 +114,43 @@
       <h2>Related pages</h2>
       <ul>
         <li><a href="/flip-worth-ai/terms/">Terms of Use</a></li>
+        <li><a href="/flip-worth-ai/#pricing">Pricing</a></li>
         <li><a href="/flip-worth-ai/support/">Support</a></li>
       </ul>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer footer-4col flip-footer">
       <div class="wrap">
         <div class="footer-brand-col">
-          <div class="footer-brand"><img class="app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="40" height="40" loading="lazy" /> Flip Worth AI</div>
+          <div class="footer-brand">
+            <img class="footer-parent-logo" src="/assets/worthscan-ai-logo.png" alt="WorthScan AI logo" width="40" height="40" loading="lazy" />
+            Flip Worth AI
+          </div>
           <p class="footer-about">
             From finding the flip to running the business. A WorthScan AI app.
           </p>
         </div>
         <div class="footer-col">
-          <h4>Flip Worth AI</h4>
-          <nav>
-            <a href="/flip-worth-ai/">Overview</a>
+          <h4>Product</h4>
+          <nav aria-label="Product">
+            <a href="/flip-worth-ai/#scan">Scan &amp; Valuation</a>
             <a href="/flip-worth-ai/reseller-tools/">Reseller Tools</a>
             <a href="/flip-worth-ai/marketplace-iq/">Marketplace IQ</a>
+            <a href="/flip-worth-ai/#pricing">Pricing</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <nav aria-label="Help">
             <a href="/flip-worth-ai/support/">Support</a>
+            <a href="/flip-worth-ai/delete-account/">Delete account</a>
+            <a href="/flip-worth-ai/refunds/">Refunds</a>
+            <a href="/">WorthScan AI home</a>
           </nav>
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
-          <nav>
+          <nav aria-label="Legal">
             <a href="/flip-worth-ai/privacy/">Privacy</a>
             <a href="/flip-worth-ai/terms/">Terms</a>
             <a href="/flip-worth-ai/disclaimer/">Disclaimer</a>
@@ -106,9 +161,7 @@
         <div class="wrap">
           <div class="contact">
             Contact:
-            <a href="mailto:flipworthai.support@gmail.com"
-              >flipworthai.support@gmail.com</a
-            >
+            <a href="mailto:flipworthai.support@gmail.com">flipworthai.support@gmail.com</a>
           </div>
           <div class="copy">© 2026 WorthScan AI</div>
         </div>

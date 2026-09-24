@@ -61,13 +61,19 @@
 
     <header class="site-header">
       <div class="wrap">
-        <a class="brand flip-brand" href="/flip-worth-ai/">
-          <img class="logo app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="36" height="36" />
-          <span class="brand-text">
-            <span class="brand-name">Flip Worth AI</span>
-            <span class="brand-by">by WorthScan AI</span>
-          </span>
-        </a>
+        <div class="flip-brand-group">
+          <a class="parent-brand" href="/" aria-label="WorthScan AI home" title="Back to WorthScan AI home">
+            <img class="logo" src="/assets/worthscan-ai-logo.png" alt="" width="28" height="28" />
+            <span class="parent-brand-name">WorthScan AI</span>
+          </a>
+          <span class="brand-sep" aria-hidden="true">/</span>
+          <a class="brand flip-brand" href="/flip-worth-ai/">
+            <img class="logo app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="36" height="36" />
+            <span class="brand-text">
+              <span class="brand-name">Flip Worth AI</span>
+            </span>
+          </a>
+        </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
         <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
         <nav class="site-nav" aria-label="Flip Worth AI">
@@ -134,7 +140,7 @@
                   <div class="fm-thumb t1"></div>
                   <div class="fm-row-main">
                     <div class="fm-row-title">Vintage Pyrex mixing bowl set</div>
-                    <div class="fm-row-sub">Listed $28 · Max buy $38</div>
+                    <div class="fm-row-sub">Listed $28 · Max Buy $38</div>
                   </div>
                   <span class="fm-chip good">In Buy Zone</span>
                 </div>
@@ -142,7 +148,7 @@
                   <div class="fm-thumb t2"></div>
                   <div class="fm-row-main">
                     <div class="fm-row-title">Nintendo DS Lite, boxed</div>
-                    <div class="fm-row-sub">Listed $52 · Max buy $60</div>
+                    <div class="fm-row-sub">Listed $52 · Max Buy $60</div>
                   </div>
                   <span class="fm-chip good">In Buy Zone</span>
                 </div>
@@ -150,9 +156,9 @@
                   <div class="fm-thumb t3"></div>
                   <div class="fm-row-main">
                     <div class="fm-row-title">Levi's denim trucker jacket</div>
-                    <div class="fm-row-sub">Listed $45 · Max buy $38</div>
+                    <div class="fm-row-sub">Listed $45 · Max Buy $38</div>
                   </div>
-                  <span class="fm-chip warn">Above max</span>
+                  <span class="fm-chip warn">Above Max Buy</span>
                 </div>
                 <div class="fm-summary">
                   <div><span>Expected Profit</span><strong>$29.70</strong></div>
@@ -192,7 +198,7 @@
               <span class="flow-icon"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>
               <span class="flow-num">03</span>
               <h3>Decide</h3>
-              <p>Check Expected Profit, ROI, and your Max Buy Price before you commit.</p>
+              <p>Check Expected Profit, ROI, and Max Buy before you commit.</p>
             </li>
             <li class="flow-step">
               <span class="flow-icon"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg></span>
@@ -443,7 +449,7 @@
               <div class="dd-zone">
                 <div class="dd-zone-top"><span>Buy Zone</span><b>Listing is in your Buy Zone</b></div>
                 <div class="dd-bar"><i class="zone"></i><i class="mark"></i></div>
-                <div class="dd-scale"><span>$0</span><span>Max buy $38.47</span><span>$60</span></div>
+                <div class="dd-scale"><span>$0</span><span>Max Buy $38.47</span><span>$60</span></div>
               </div>
               <div class="dd-actions"><span>Watch Deal</span><span class="primary">Bought It</span></div>
             </div>
@@ -452,9 +458,9 @@
               <article class="miq-card">
                 <div class="miq-card-head">
                   <span class="miq-ic"><svg class="ic" aria-hidden="true"><use href="#i-radar"/></svg></span>
-                  <h3>Deal Radar: discovery that keeps working</h3>
+                  <h3>Deal Radar: discovery built on your Buy Rules</h3>
                 </div>
-                <p>Tell Flip what you buy and what you'll pay. Opportunity Finder and Deal Alerts surface listings that fit, For You learns what you like, and New Listings and Search are there when you want to dig in yourself.</p>
+                <p>Tell Flip what you buy and what you'll pay. Opportunity Finder checks your Buy Rules automatically, For You surfaces opportunities that match your Buy Rules, and Deal Alerts can notify you about eligible new matches. New Listings and Search are there when you want to dig in yourself.</p>
                 <ul class="miq-tags">
                   <li><svg class="ic" aria-hidden="true"><use href="#i-rules"/></svg>Buy Rules</li>
                   <li><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>Opportunity Finder</li>
@@ -468,7 +474,7 @@
                   <span class="miq-ic"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></span>
                   <h3>Deal Decision: know the numbers before you buy</h3>
                 </div>
-                <p>Review the seller's listing images, set your Target Resale Price, and see Expected Profit, ROI, Margin, Break-even Sale Price, and your Max Buy Price — with a clear Buy Zone.</p>
+                <p>Review the seller's listing images, set your Target Resale Price, and see Expected Profit, ROI, Margin, Break-even Sale Price, and Max Buy — with a clear Buy Zone.</p>
               </article>
               <article class="miq-card">
                 <div class="miq-card-head">
@@ -514,12 +520,12 @@
             <div class="why">
               <span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-radar"/></svg></span>
               <h3>Less manual searching</h3>
-              <p>Buy Rules and Deal Alerts keep looking so you don't have to refresh marketplaces all day.</p>
+              <p>Opportunity Finder checks your Buy Rules automatically, and Deal Alerts can notify you about eligible new matches.</p>
             </div>
             <div class="why">
               <span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>
               <h3>Clearer buy decisions</h3>
-              <p>Profit, ROI, and a Max Buy Price based on assumptions you can see and adjust.</p>
+              <p>Profit, ROI, and Max Buy based on assumptions you can see and adjust.</p>
             </div>
             <div class="why">
               <span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg></span>
@@ -711,7 +717,7 @@
       <div class="wrap">
         <div class="footer-brand-col">
           <div class="footer-brand">
-            <img class="app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="40" height="40" loading="lazy" />
+            <img class="footer-parent-logo" src="/assets/worthscan-ai-logo.png" alt="WorthScan AI logo" width="40" height="40" loading="lazy" />
             Flip Worth AI
           </div>
           <p class="footer-about">

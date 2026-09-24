@@ -46,13 +46,19 @@
 
     <header class="site-header">
       <div class="wrap">
-        <a class="brand flip-brand" href="/flip-worth-ai/">
-          <img class="logo app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="36" height="36" />
-          <span class="brand-text">
-            <span class="brand-name">Flip Worth AI</span>
-            <span class="brand-by">by WorthScan AI</span>
-          </span>
-        </a>
+        <div class="flip-brand-group">
+          <a class="parent-brand" href="/" aria-label="WorthScan AI home" title="Back to WorthScan AI home">
+            <img class="logo" src="/assets/worthscan-ai-logo.png" alt="" width="28" height="28" />
+            <span class="parent-brand-name">WorthScan AI</span>
+          </a>
+          <span class="brand-sep" aria-hidden="true">/</span>
+          <a class="brand flip-brand" href="/flip-worth-ai/">
+            <img class="logo app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="36" height="36" />
+            <span class="brand-text">
+              <span class="brand-name">Flip Worth AI</span>
+            </span>
+          </a>
+        </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
         <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
         <nav class="site-nav" aria-label="Flip Worth AI">
@@ -501,7 +507,7 @@
       <div class="wrap">
         <div class="footer-brand-col">
           <div class="footer-brand">
-            <img class="app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="40" height="40" loading="lazy" />
+            <img class="footer-parent-logo" src="/assets/worthscan-ai-logo.png" alt="WorthScan AI logo" width="40" height="40" loading="lazy" />
             Flip Worth AI
           </div>
           <p class="footer-about">

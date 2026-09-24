@@ -2009,10 +2009,40 @@ main.flip-main {
   color: var(--flip-ink);
 }
 
-.flip-brand .brand-by {
-  font-size: 0.72rem;
-  font-weight: 500;
+/* Parent-brand return path: WorthScan AI home / Flip Worth AI */
+.flip-brand-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.site-header .parent-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
   color: var(--muted);
+  white-space: nowrap;
+}
+
+.site-header .parent-brand:hover {
+  color: var(--flip-dark);
+  text-decoration: none;
+}
+
+.parent-brand .logo {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+
+.brand-sep {
+  color: var(--flip-line);
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1;
 }
 
 .flip-page .site-nav a:not(.nav-cta),
@@ -3313,6 +3343,13 @@ main.flip-main {
   height: 40px;
 }
 
+/* Parent-brand (WorthScan AI) icon in the Flip footer brand block */
+.flip-footer .footer-brand .footer-parent-logo {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
 .flip-page .footer-col nav a:hover,
 .flip-sub .footer-col nav a:hover {
   color: var(--flip-dark);
@@ -3791,6 +3828,28 @@ main.flip-main {
 }
 
 /* Flip responsive */
+/* Parent-brand return path keeps its logo; the label returns at full desktop width */
+@media (max-width: 1100px) {
+  .parent-brand-name {
+    display: none;
+  }
+}
+
+/* Keep the Flip header on one line between the mobile menu and full desktop width */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .flip-page .site-nav,
+  .flip-sub .site-nav {
+    gap: 14px;
+  }
+  .flip-page .site-nav a,
+  .flip-sub .site-nav a {
+    font-size: 0.9rem;
+  }
+  .flip-page .site-nav a.nav-cta {
+    padding: 8px 12px;
+  }
+}
+
 @media (max-width: 1000px) {
   .flow {
     grid-template-columns: repeat(3, 1fr);
@@ -3861,12 +3920,6 @@ main.flip-main {
 
 /* Keep the Flip nav on one line just above the mobile-menu breakpoint */
 @media (min-width: 761px) and (max-width: 900px) {
-  .flip-page .site-nav {
-    gap: 16px;
-  }
-  .flip-page .site-nav a {
-    font-size: 0.92rem;
-  }
   .flip-page .site-nav a[href="#how-it-works"],
   .flip-page .site-nav a[href="/flip-worth-ai/"] {
     display: none;
@@ -3947,8 +4000,5 @@ main.flip-main {
   .flip-cta .wrap {
     padding: 44px 22px;
     border-radius: 18px;
-  }
-  .flip-brand .brand-by {
-    display: none;
   }
 }

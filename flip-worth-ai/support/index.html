@@ -18,13 +18,27 @@
   <body class="flip-sub">
     <header class="site-header">
       <div class="wrap">
-        <a class="brand flip-brand" href="/flip-worth-ai/"><img class="logo app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="32" height="32" /><span class="brand-text"><span class="brand-name">Flip Worth AI</span><span class="brand-by">by WorthScan AI</span></span></a>
+        <div class="flip-brand-group">
+          <a class="parent-brand" href="/" aria-label="WorthScan AI home" title="Back to WorthScan AI home">
+            <img class="logo" src="/assets/worthscan-ai-logo.png" alt="" width="28" height="28" />
+            <span class="parent-brand-name">WorthScan AI</span>
+          </a>
+          <span class="brand-sep" aria-hidden="true">/</span>
+          <a class="brand flip-brand" href="/flip-worth-ai/">
+            <img class="logo app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="32" height="32" />
+            <span class="brand-text">
+              <span class="brand-name">Flip Worth AI</span>
+            </span>
+          </a>
+        </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
         <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
-        <nav class="site-nav">
-          <a href="/">Home</a>
-          <a href="/flip-worth-ai/">Flip Worth AI</a>
-          <a href="/flip-worth-ai/support/">Support</a>
+        <nav class="site-nav" aria-label="Flip Worth AI">
+          <a href="/flip-worth-ai/">Overview</a>
+          <a href="/flip-worth-ai/reseller-tools/">Reseller Tools</a>
+          <a href="/flip-worth-ai/marketplace-iq/">Marketplace IQ</a>
+          <a href="/flip-worth-ai/#pricing">Pricing</a>
+          <a href="/flip-worth-ai/support/" aria-current="page">Support</a>
         </nav>
       </div>
     </header>
@@ -69,26 +83,38 @@
       </ul>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer footer-4col flip-footer">
       <div class="wrap">
         <div class="footer-brand-col">
-          <div class="footer-brand"><img class="app-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="40" height="40" loading="lazy" /> Flip Worth AI</div>
+          <div class="footer-brand">
+            <img class="footer-parent-logo" src="/assets/worthscan-ai-logo.png" alt="WorthScan AI logo" width="40" height="40" loading="lazy" />
+            Flip Worth AI
+          </div>
           <p class="footer-about">
             From finding the flip to running the business. A WorthScan AI app.
           </p>
         </div>
         <div class="footer-col">
-          <h4>Flip Worth AI</h4>
-          <nav>
-            <a href="/flip-worth-ai/">Overview</a>
+          <h4>Product</h4>
+          <nav aria-label="Product">
+            <a href="/flip-worth-ai/#scan">Scan &amp; Valuation</a>
             <a href="/flip-worth-ai/reseller-tools/">Reseller Tools</a>
             <a href="/flip-worth-ai/marketplace-iq/">Marketplace IQ</a>
+            <a href="/flip-worth-ai/#pricing">Pricing</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <nav aria-label="Help">
             <a href="/flip-worth-ai/support/">Support</a>
+            <a href="/flip-worth-ai/delete-account/">Delete account</a>
+            <a href="/flip-worth-ai/refunds/">Refunds</a>
+            <a href="/">WorthScan AI home</a>
           </nav>
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
-          <nav>
+          <nav aria-label="Legal">
             <a href="/flip-worth-ai/privacy/">Privacy</a>
             <a href="/flip-worth-ai/terms/">Terms</a>
             <a href="/flip-worth-ai/disclaimer/">Disclaimer</a>
@@ -99,9 +125,7 @@
         <div class="wrap">
           <div class="contact">
             Contact:
-            <a href="mailto:flipworthai.support@gmail.com"
-              >flipworthai.support@gmail.com</a
-            >
+            <a href="mailto:flipworthai.support@gmail.com">flipworthai.support@gmail.com</a>
           </div>
           <div class="copy">© 2026 WorthScan AI</div>
         </div>
