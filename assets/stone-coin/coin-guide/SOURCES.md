@@ -1,6 +1,50 @@
 # Coin Guide image sources and reuse rights
 
-All images below are real coin photographs downloaded from Wikimedia Commons on October 13, 2026. The local copies are reduced-resolution derivatives supplied by Wikimedia's file redirect service and are used in the sample cards on `/stone-worth-ai/`. No AI-generated or invented coin imagery is used in those cards.
+All images below are real coin photographs downloaded from Wikimedia Commons on October 13, 2026. Local copies are original or reduced-resolution derivatives supplied by Wikimedia and are used in the collector-significant example cards on `/stone-worth-ai/`. No AI-generated or invented coin imagery is used in those cards.
+
+## 1909-S VDB Lincoln Cent
+
+- Local file: `1909-s-vdb-lincoln-cent.jpg`
+- Source page: https://commons.wikimedia.org/wiki/File:Obverse_(left)_and_reverse_(right)_of_1909-S_VDB_Lincoln_cent.jpg
+- Direct asset: https://commons.wikimedia.org/wiki/Special:Redirect/file/Obverse_(left)_and_reverse_(right)_of_1909-S_VDB_Lincoln_cent.jpg?width=1200
+- Source organization: Wikimedia Commons
+- Creator / credit: Lost Dutchman Rare Coins
+- Rights: Creative Commons Attribution-ShareAlike 3.0 United States (CC BY-SA 3.0 US).
+- Why allowed: Wikimedia's Volunteer Response Team verified the copyright holder's permission; the on-page card provides attribution and a source link.
+
+## 1916-D Mercury Dime
+
+- Local file: `1916-d-mercury-dime.jpg`
+- Source page: https://commons.wikimedia.org/wiki/File:Screenshot_20211123-150404_1916DMercury.jpg
+- Direct asset: https://commons.wikimedia.org/wiki/Special:Redirect/file/Screenshot_20211123-150404_1916DMercury.jpg?width=1200
+- Source organization: United States Mint via Wikimedia Commons
+- Creator / credit: United States Mint
+- Rights: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+- Why allowed: The Commons file is offered under CC BY-SA 4.0; the on-page card provides attribution and a source link.
+
+## 1893-S Morgan Dollar
+
+- Local file: `1893-s-morgan-dollar.jpg`
+- Source page: https://commons.wikimedia.org/wiki/File:1893-S_Morgan_dollar_obverse.jpg
+- Direct asset: https://commons.wikimedia.org/wiki/Special:Redirect/file/1893-S_Morgan_dollar_obverse.jpg?width=1000
+- Source organization: Wikimedia Commons
+- Creator / credit: Bruxton
+- Rights: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); coin design is public-domain U.S. currency.
+- Why allowed: The photographer published the work under CC BY-SA 4.0; the on-page card provides attribution and a source link.
+
+## 1932 Washington Quarter
+
+- Local file: `1932-washington-quarter.jpg`
+- Source page: https://commons.wikimedia.org/wiki/File:1932_Washington_quarter_obverse.jpg
+- Direct asset: https://commons.wikimedia.org/wiki/Special:Redirect/file/1932_Washington_quarter_obverse.jpg?width=1000
+- Source organization: Numismatic Guaranty Corporation via Wikimedia Commons
+- Creator / credit: Numismatic Guaranty Corporation
+- Rights: Public domain in the United States; Wikimedia marks it as U.S. government currency imagery.
+- Why allowed: The Commons file page records the public-domain status; the on-page card includes a source and reuse-basis credit.
+
+## Additional type-reference photographs
+
+The following files supported the earlier generic type-example presentation. The Bicentennial Kennedy Half Dollar remains in the current comparison set; the others are retained locally with provenance documented in case they are reused later.
 
 ## Lincoln Wheat Cent
 

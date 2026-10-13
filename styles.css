@@ -477,8 +477,14 @@
 .sc-learn-card p { color: var(--sc-muted); font-size: 0.9rem; }
 .sc-learn-link { margin-top: auto; color: var(--sc-blue); font-size: 0.87rem; font-weight: 750; }
 .sc-centered-action { display: flex; justify-content: center; margin-top: 30px; }
+.sc-discipline-head { position: relative; padding-left: 24px; border-left: 3px solid var(--sc-blue); }
+.sc-discipline-head-coin { border-left-color: var(--sc-gold); }
+.sc-discipline-tag { display: inline-flex; margin-top: 15px; padding: 8px 12px; color: #1b4c91; background: #edf4ff; border-radius: 8px; font-size: 0.76rem; font-weight: 750; line-height: 1.4; }
 
 .sc-coins-learn { background: linear-gradient(160deg, #fffdf8, #fff8e7); }
+.sc-coin-orientation { display: flex; align-items: center; justify-content: center; gap: 10px; margin: -6px 0 28px; padding: 15px 18px; color: #efe6ce; background: linear-gradient(135deg, #061b47, #0d3472); border: 1px solid rgba(216, 160, 34, 0.5); border-radius: 14px; box-shadow: 0 12px 28px rgba(6, 27, 71, 0.12); }
+.sc-coin-orientation span { color: #fff; font-size: 0.78rem; font-weight: 750; text-align: center; }
+.sc-coin-orientation i { color: #f4d57e; font-style: normal; }
 .sc-coin-guide-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .sc-coin-topic-group { overflow: hidden; background: rgba(255, 255, 255, 0.88); border: 1px solid #e7d7a9; border-radius: 20px; box-shadow: 0 12px 34px rgba(92, 64, 13, 0.06); }
 .sc-topic-group-head { display: flex; align-items: center; gap: 15px; padding: 21px 24px 19px; background: linear-gradient(135deg, rgba(6, 27, 71, 0.97), rgba(13, 52, 114, 0.95)); }
@@ -491,7 +497,8 @@
 .sc-coin-topic-group li::before { content: ""; position: absolute; left: 0; top: 22px; width: 6px; height: 6px; background: var(--sc-gold); border-radius: 50%; box-shadow: 0 0 0 4px var(--sc-gold-soft); }
 .sc-coin-topic-group strong { display: block; color: var(--sc-ink); font-size: 0.94rem; line-height: 1.35; }
 .sc-coin-topic-group li p { margin: 4px 0 0; color: var(--sc-muted); font-size: 0.84rem; line-height: 1.52; }
-.sc-sample-head { max-width: 720px; margin: 68px auto 30px; text-align: center; }
+.sc-market-examples { margin-top: 68px; padding-top: 62px; border-top: 1px solid #dfc87f; }
+.sc-sample-head { max-width: 780px; margin: 0 auto 30px; text-align: center; }
 .sc-sample-head h3 { margin: 10px 0 10px; font-size: var(--sc-heading); line-height: 1.14; letter-spacing: -0.035em; }
 .sc-sample-head p { margin: 0; color: var(--sc-muted); font-size: 0.95rem; }
 .sc-coin-sample-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
@@ -502,7 +509,9 @@
 .sc-sample-era { color: var(--sc-gold-dark); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
 .sc-sample-copy h3 { margin: 8px 0 8px; font-size: var(--sc-card-title); line-height: 1.25; }
 .sc-sample-copy > p { min-height: 4.3em; margin: 0; color: var(--sc-muted); font-size: 0.88rem; line-height: 1.55; }
+.sc-sample-copy > p strong { color: var(--sc-ink); }
 .sc-sample-copy dl { margin: 18px 0 0; padding-top: 15px; border-top: 1px solid #eee3c3; }
+.sc-sample-copy dl dt:not(:first-child) { margin-top: 13px; }
 .sc-sample-copy dt { color: var(--sc-ink); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; }
 .sc-sample-copy dd { margin: 5px 0 0; color: #66583a; font-size: 0.82rem; line-height: 1.5; }
 .sc-photo-credit { display: inline-block; margin-top: 14px; color: #6c5a30; font-size: 0.68rem; font-weight: 700; line-height: 1.35; text-decoration: underline; text-decoration-color: #d6bf7e; text-underline-offset: 3px; }
@@ -620,9 +629,13 @@
   .sc-evidence-wide { display: block; }
   .sc-evidence-wide h3 { margin-top: 15px; }
   .sc-learn-card { min-height: 190px; padding: 22px; }
+  .sc-discipline-head { padding-left: 17px; }
+  .sc-discipline-tag { display: block; }
+  .sc-coin-orientation { align-items: stretch; flex-direction: column; gap: 6px; }
+  .sc-coin-orientation i { align-self: center; transform: rotate(90deg); line-height: 1; }
   .sc-topic-group-head { padding: 18px 19px 17px; }
   .sc-coin-topic-group ul { padding-left: 19px; padding-right: 19px; }
-  .sc-sample-head { margin-top: 50px; }
+  .sc-market-examples { margin-top: 50px; padding-top: 48px; }
   .sc-sample-copy { padding: 20px; }
   .sc-sample-copy > p { min-height: 0; }
   .sc-guide-path { grid-template-columns: 1fr; gap: 8px; }
