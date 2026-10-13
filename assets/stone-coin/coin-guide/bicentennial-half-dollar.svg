@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Bicentennial Half Dollar educational illustration</title><desc id="desc">A stylized half dollar featuring a profile, stars, and the dual date 1776 to 1976.</desc>
+  <defs><radialGradient id="c"><stop stop-color="#fff"/><stop offset=".68" stop-color="#c1cbd0"/><stop offset="1" stop-color="#6e7b84"/></radialGradient><linearGradient id="b" x2="1" y2="1"><stop stop-color="#0d3979"/><stop offset="1" stop-color="#04142f"/></linearGradient></defs>
+  <rect width="640" height="420" fill="url(#b)"/><circle cx="320" cy="210" r="158" fill="#020c1c" opacity=".3"/><circle cx="320" cy="200" r="154" fill="url(#c)" stroke="#fff" stroke-width="5"/><circle cx="320" cy="200" r="135" fill="none" stroke="#68767e" stroke-opacity=".5" stroke-width="3"/>
+  <path d="M345 101c-43 7-75 42-74 85 0 22 10 35 5 55-5 18-18 34-37 49 32 17 76 18 118 2-9-21-4-41 11-58 12-15 9-29-5-40 16-21 9-68-18-93Z" fill="#697780" opacity=".81"/><g fill="#f3f5f3"><text x="218" y="205" font-size="25">★</text><text x="405" y="205" font-size="25">★</text><text x="249" y="129" font-size="20">★</text><text x="379" y="129" font-size="20">★</text></g>
+  <text x="320" y="309" text-anchor="middle" fill="#53616b" font-family="Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="3">1776–1976</text><text x="320" y="388" text-anchor="middle" fill="#f7d792" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="4">EDUCATIONAL STUDY</text>
+</svg>
