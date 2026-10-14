@@ -2,7 +2,7 @@
 
 A lightweight, static website for **WorthScan AI**, an umbrella brand for
 AI-powered educational field-check apps. It hosts the Google Play readiness,
-support, and legal pages for the current app, **Stone Worth AI**.
+support, and legal pages for the current app, **Stone & Coin Worth AI**.
 
 No backend, no login, no payment, no newsletter, no analytics. Static HTML/CSS
 only.

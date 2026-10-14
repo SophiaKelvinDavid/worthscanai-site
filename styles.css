@@ -1656,7 +1656,7 @@ li {
   color: var(--muted);
 }
 
-/* ---------- Stone Worth AI result mockup (product-specific) ---------- */
+/* ---------- Stone & Coin Worth AI result mockup (product-specific) ---------- */
 .swa-mock {
   position: relative;
   width: 100%;
@@ -2183,7 +2183,7 @@ li {
   text-align: center;
 }
 
-/* ---------- Learn / education hub (Stone Worth AI) ---------- */
+/* ---------- Learn / education hub (Stone & Coin Worth AI) ---------- */
 .learn-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
