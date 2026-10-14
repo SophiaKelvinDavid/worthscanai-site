@@ -1656,6 +1656,55 @@ li {
   color: var(--muted);
 }
 
+/* Stone & Coin footer: light, high-contrast product identity across all related pages. */
+.stone-footer-page .site-footer {
+  color: #52617a;
+  background: #f6f8fc;
+  border-top-color: #d9e2ef;
+}
+
+.stone-footer-page .site-footer .footer-brand {
+  color: #0b1e3d;
+}
+
+.stone-footer-page .site-footer .footer-about {
+  color: #52617a;
+}
+
+.stone-footer-page .site-footer .footer-col h4 {
+  color: #334b70;
+}
+
+.stone-footer-page .site-footer .footer-col nav a,
+.stone-footer-page .site-footer .footer-bottom a,
+.stone-footer-page .site-footer .footer-bottom a:visited {
+  color: #174f9f;
+}
+
+.stone-footer-page .site-footer .footer-col nav a:hover,
+.stone-footer-page .site-footer .footer-bottom a:hover {
+  color: #0b3979;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.stone-footer-page .site-footer a:focus-visible {
+  outline-color: #0b56c8;
+}
+
+.stone-footer-page .site-footer .footer-bottom {
+  border-top-color: #d9e2ef;
+}
+
+.stone-footer-page .site-footer .footer-bottom .contact,
+.stone-footer-page .site-footer .footer-bottom .copy {
+  color: #5d6b7e;
+}
+
+.stone-footer-page .site-footer .footer-bottom a {
+  overflow-wrap: anywhere;
+}
+
 /* ---------- Stone & Coin Worth AI result mockup (product-specific) ---------- */
 .swa-mock {
   position: relative;
@@ -2569,6 +2618,9 @@ a.learn-card:hover {
     transform: none;
   }
   .site-footer.footer-4col .wrap {
+    grid-template-columns: 1fr;
+  }
+  .stone-footer-page .site-footer .wrap {
     grid-template-columns: 1fr;
   }
   body {
