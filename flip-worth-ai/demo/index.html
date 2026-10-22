@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Explore Flip Worth AI through a free interactive browser demo with pre-recorded sample results, inventory and reseller tools.">
+  <title>Flip Worth AI | Interactive Demo</title>
+  <link rel="canonical" href="https://worthscanai.com/flip-worth-ai/demo/">
+  <link rel="icon" href="/assets/apps/flip/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/apps/flip/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apps/flip/apple-touch-icon.png">
+  <link rel="stylesheet" href="./demo.css">
+  <script src="./demo.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/flip-worth-ai/" aria-label="Flip Worth AI home">
+        <img class="brand-icon" src="/assets/apps/flip-worth-ai-icon.png" alt="" width="38" height="38"><span>Flip Worth AI</span>
+      </a>
+      <span class="header-note">Interactive preview <span class="dot">•</span> Sample data only</span>
+      <a class="header-link" href="/flip-worth-ai/">Back to Website</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">TRY IT BEFORE YOU INSTALL</p>
+      <h1 id="hero-title">Explore <span>Flip Worth AI</span></h1>
+      <p class="lead">Walk through a sample Flip Check, see resale signals, manage inventory, and explore reseller tools — right in your browser.</p>
+      <div class="hero-actions">
+        <button id="start-demo" class="btn btn-primary">▶ &nbsp;Start Interactive Demo</button>
+        <button id="show-results" class="btn btn-outline">View Sample Result</button>
+      </div>
+      <div class="steps" aria-label="Demo steps">
+        <span><b>1</b> Choose sample item</span><span class="step-arrow">→</span>
+        <span><b>2</b> Answer quick questions</span><span class="step-arrow">→</span>
+        <span><b>3</b> See Flip Check</span>
+      </div>
+    </section>
+    <section class="demo-section" id="demo" aria-label="Interactive Flip Worth AI Demo">
+      <aside class="scenario-panel" aria-label="Demo scenario shortcuts">
+        <div class="section-kicker">EXPLORE THE APP</div>
+        <h2>Demo Scenarios</h2>
+        <p class="scenario-description">Choose a workflow. Every screen uses temporary, preloaded sample data.</p>
+        <nav class="scenario-list" id="scenario-list">
+          <button class="scenario active" data-screen="home" data-action="go:home"><span class="scenario-icon">⌗</span><span><strong>Start a Scan</strong><small>Choose a sample item</small></span><span class="chevron">›</span></button>
+          <button class="scenario" data-screen="result" data-action="go:result"><span class="scenario-icon">▥</span><span><strong>Flip Check Result</strong><small>See score and value signals</small></span><span class="chevron">›</span></button>
+          <button class="scenario" data-screen="inventory" data-action="go:inventory"><span class="scenario-icon">⬡</span><span><strong>Inventory & Profit</strong><small>Track a sample resale</small></span><span class="chevron">›</span></button>
+          <button class="scenario" data-screen="deals" data-action="go:deals"><span class="scenario-icon">◎</span><span><strong>Deal Radar</strong><small>Compare example listings</small></span><span class="chevron">›</span></button>
+          <button class="scenario" data-screen="dashboard" data-action="go:dashboard"><span class="scenario-icon">▤</span><span><strong>Reseller Tools</strong><small>Dashboard and CSV export</small></span><span class="chevron">›</span></button>
+        </nav>
+        <div class="scenario-bottom">
+          <div class="status-label"><span class="status-dot"></span> Offline simulation — no API</div>
+          <button id="reset-demo" class="btn btn-reset">↺ &nbsp;Reset Demo</button>
+        </div>
+      </aside>
+      <div class="phone-stage">
+        <div class="phone-toolbar"><span><span class="status-dot"></span> Live interactions · Sample results</span><span class="sample-badge">◈ Sample Data</span></div>
+        <div class="phone" role="region" aria-label="Flip Worth AI mobile app demo">
+          <div class="phone-status" aria-hidden="true"><span>9:41</span><span>▮▮▮ ᴡɪғɪ ▰</span></div>
+          <div id="phone-screen" class="phone-screen" tabindex="-1" aria-live="polite"></div>
+          <nav id="phone-tabs" class="phone-tabs" aria-label="Mobile app navigation"></nav>
+        </div>
+        <p class="phone-caption">Based on actual Flip Worth AI screenshots. This is a <strong>pre-recorded, simulated</strong> experience, not live AI analysis.</p>
+      </div>
+      <aside class="info-panel">
+        <span class="mini-label">WHY TRY THE DEMO?</span>
+        <h2>Find out how a flip gets evaluated.</h2>
+        <p>Start with a photographed item. Explore a real sample Flip Check, then try inventory tracking and sample deals.</p>
+        <div class="info-feature"><span>⌗</span><div><strong>Authentic app workflow</strong><small>Modeled after the screens you see in Flip Worth AI.</small></div></div>
+        <div class="info-feature"><span>◫</span><div><strong>No account or uploads</strong><small>Choose sample photos; no personal files leave your device.</small></div></div>
+        <div class="info-feature"><span>◈</span><div><strong>No AI credits used</strong><small>Results and comparisons are fixed examples.</small></div></div>
+        <div class="info-warning">Sample scores and prices are educational examples, not live listings, appraisals, guaranteed resale prices, or financial advice.</div>
+        <a href="https://apps.apple.com/us/app/flip-worth-ai/id6785751227" rel="noopener noreferrer" target="_blank" class="btn btn-primary btn-wide">View on the App Store ↗</a>
+      </aside>
+    </section>
+    <footer class="footer-note">Interactive preview for demonstration only. Sample changes reset when the page is reloaded. No tracking, payment processing, database, or AI API is used by this demo.</footer>
+  </main>
+</body>
+</html>
