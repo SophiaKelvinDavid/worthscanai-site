@@ -13,6 +13,7 @@ only.
 | --- | --- |
 | `/` | `index.html` |
 | `/stone-worth-ai` | `stone-worth-ai/index.html` |
+| `/stone-worth-ai/demo` | `stone-worth-ai/demo/index.html` |
 | `/flip-worth-ai` | `flip-worth-ai/index.html` |
 | `/flip-worth-ai/demo` | `flip-worth-ai/demo/index.html` |
 | `/stone/learn` | `stone/learn/index.html` |

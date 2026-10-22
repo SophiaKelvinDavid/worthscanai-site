@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Try Stone & Coin Worth AI with a fictional sample stone and an Anna May Wong quarter. A client-side interactive product preview." />
+  <title>Interactive Demo | Stone & Coin Worth AI</title>
+  <link rel="stylesheet" href="./demo.css" />
+  <script src="./demo.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="wordmark" href="../" aria-label="Stone and Coin Worth AI product page"><span class="mark">◆<span>◉</span></span><span>Stone <em>&</em> Coin <strong>Worth AI</strong></span></a>
+      <div class="topright"><span class="pill small-pill">● No signup</span><a class="site-link" href="../">← Product site</a></div>
+    </header>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="dot"></span> INTERACTIVE PRODUCT PREVIEW</div>
+      <h1 id="hero-title">Explore Stones. <span>Discover Coins.</span></h1>
+      <p>Choose a sample find, follow the scanner steps, and explore the app’s example results — directly in your browser.</p>
+      <div class="hero-pills"><span>✓ Sample items only</span><span>✓ No AI credits</span><span>✓ No account needed</span></div>
+    </section>
+    <main class="workspace">
+      <aside class="scenarios" aria-label="Demo scenarios">
+        <p class="eyebrow">GET STARTED</p><h2>Choose a demo</h2>
+        <p class="aside-desc">Try the two scanners in the same Stone & Coin Worth AI experience.</p>
+        <button class="scenario selected" data-action="go" data-view="home"><span class="scenario-icon home-icon">⌂</span><span><strong>Scanner Home</strong><small>Choose Stone or Coin</small></span><span class="chevron">›</span></button>
+        <button class="scenario" data-action="start" data-kind="stone"><span class="scenario-icon stone-icon">◇</span><span><strong>Stone Scanner</strong><small>Photo → questions → field check</small></span><span class="chevron">›</span></button>
+        <button class="scenario" data-action="start" data-kind="coin"><span class="scenario-icon coin-icon">◉</span><span><strong>Coin Scanner</strong><small>Both sides → identification</small></span><span class="chevron">›</span></button>
+        <button class="scenario" data-action="go" data-view="finds"><span class="scenario-icon home-icon">▤</span><span><strong>My Finds</strong><small>View your saved samples</small></span><span class="chevron">›</span></button>
+        <div class="aside-note"><strong>How this demo works</strong><p>Results are prewritten examples based on the supplied app screens, not live analysis. Your actions stay in this browser tab and reset when it reloads.</p></div>
+        <button class="reset-link" data-action="reset">↺ Reset demo</button>
+      </aside>
+      <section class="simulator" aria-label="Interactive mobile app simulator">
+        <div class="sim-head"><span><span class="live-dot"></span> Interactive mobile preview</span><span class="sample-tag">SAMPLE DATA</span></div>
+        <div class="phone-frame">
+          <div class="phone" id="phone">
+            <div class="phone-status" aria-hidden="true"><span>9:41</span><span class="island"></span><span>▮▮ ▰ 98</span></div>
+            <div id="app-content" class="app-content" aria-live="polite"></div>
+            <nav class="bottom-nav" aria-label="Demo app navigation">
+              <button data-action="go" data-view="home" data-nav="home"><span class="nav-icon">▣</span><span>Scan</span></button>
+              <button data-action="go" data-view="finds" data-nav="finds"><span class="nav-icon">♧</span><span>My Finds</span></button>
+              <button data-action="go" data-view="guide" data-nav="guide"><span class="nav-icon">▤</span><span>Field Guide</span></button>
+              <button data-action="go" data-view="settings" data-nav="settings"><span class="nav-icon">⚙</span><span>Settings</span></button>
+            </nav>
+          </div>
+        </div>
+        <div class="sim-foot">Illustrative sample workflows · No uploads · No live AI or pricing data</div>
+      </section>
+      <aside class="details" aria-label="Demo information"><div class="detail-stone">◇</div><h2>One app.<br />Two ways to explore.</h2><p>Stone Worth AI and Coin Worth AI share an easy guided experience — but each scanner has a distinct workflow and evidence-based result.</p><div class="detail-line"><span class="small-symbol blue">◇</span><span><strong>Stone Field Check</strong><small>Likely material, score, and next steps</small></span></div><div class="detail-line"><span class="small-symbol gold">◉</span><span><strong>Coin Identification</strong><small>Both sides, collector level, and evidence</small></span></div><div class="detail-notice">Sample findings are educational only. Photos cannot establish authenticity, exact mineral identity, grade, or market value.</div></aside>
+    </main>
+    <section class="features" aria-label="Key product features"><div><span>◇</span><strong>Stone Scanner</strong><small>Explore a crystal field check</small></div><div><span>◉</span><strong>Coin Scanner</strong><small>Review two-sided identification</small></div><div><span>▤</span><strong>Evidence First</strong><small>Learn what is and isn't verified</small></div><div><span>♧</span><strong>My Finds</strong><small>Save sample results in your session</small></div></section>
+    <footer>Stone & Coin Worth AI · Interactive demonstration with sample data only · Not an appraisal or authentication.</footer>
+  </div>
+</body>
+</html>
