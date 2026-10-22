@@ -1366,6 +1366,28 @@ li {
   height: auto;
 }
 
+.demo-heading-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.demo-heading-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.demo-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.demo-actions .btn {
+  min-width: 220px;
+  justify-content: center;
+}
+
 /* Product cards */
 .product-grid {
   display: grid;
