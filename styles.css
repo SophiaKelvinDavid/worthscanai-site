@@ -510,17 +510,11 @@
 .sc-sample-head p { margin: 0; color: var(--sc-muted); font-size: 0.95rem; }
 .sc-coin-sample-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .sc-coin-sample-card { min-width: 0; overflow: hidden; background: #fff; border: 1px solid #e5d296; border-radius: 20px; box-shadow: 0 14px 35px rgba(74, 51, 9, 0.08); }
-.sc-sample-image { aspect-ratio: 16 / 10.5; display: grid; place-items: center; overflow: hidden; padding: 13px; background: radial-gradient(circle at 50% 40%, #173d76 0, #0a285d 62%, #061b47 100%); }
+.sc-sample-image { aspect-ratio: 16 / 10.5; display: grid; place-items: center; overflow: hidden; margin: 0; padding: 13px; background: radial-gradient(circle at 50% 40%, #173d76 0, #0a285d 62%, #061b47 100%); }
 .sc-sample-image img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28); }
 .sc-sample-copy { padding: 22px; }
-.sc-sample-era { color: var(--sc-gold-dark); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
-.sc-sample-copy h3 { margin: 8px 0 8px; font-size: var(--sc-card-title); line-height: 1.25; }
+.sc-sample-copy h3 { margin: 0 0 8px; font-size: var(--sc-card-title); line-height: 1.25; }
 .sc-sample-copy > p { min-height: 4.3em; margin: 0; color: var(--sc-muted); font-size: 0.88rem; line-height: 1.55; }
-.sc-sample-copy > p strong { color: var(--sc-ink); }
-.sc-sample-copy dl { margin: 18px 0 0; padding-top: 15px; border-top: 1px solid #eee3c3; }
-.sc-sample-copy dl dt:not(:first-child) { margin-top: 13px; }
-.sc-sample-copy dt { color: var(--sc-ink); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; }
-.sc-sample-copy dd { margin: 5px 0 0; color: #66583a; font-size: 0.82rem; line-height: 1.5; }
 .sc-photo-credit { display: inline-block; margin-top: 14px; color: #6c5a30; font-size: 0.68rem; font-weight: 700; line-height: 1.35; text-decoration: underline; text-decoration-color: #d6bf7e; text-underline-offset: 3px; }
 .sc-photo-credit:hover { color: var(--sc-blue); }
 .sc-value-factors { max-width: 880px; margin: 28px auto 0; padding: 18px 22px; color: #66501d; background: #fff; border: 1px solid #e5d296; border-radius: 14px; text-align: center; font-size: 0.91rem; }
