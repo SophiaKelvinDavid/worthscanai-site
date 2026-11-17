@@ -543,7 +543,11 @@
 .sc-price { margin: 13px 0 5px; color: var(--sc-ink); font-size: 2.35rem; line-height: 1.1; font-weight: 820; letter-spacing: -0.04em; }
 .sc-price small { color: var(--sc-muted); font-size: 0.78rem; font-weight: 650; letter-spacing: 0; }
 .sc-plan-card > p { color: var(--sc-muted); font-size: 0.9rem; }
-.sc-plan-card ul { margin: 24px 0 0; padding: 20px 0 0; border-top: 1px solid var(--sc-line); list-style: none; }
+.sc-plan-limit { display: flex; flex-direction: column; gap: 2px; margin-top: 18px; padding: 14px 16px; background: var(--sc-gold-soft); border: 1px solid #e8d39a; border-radius: 14px; }
+.sc-plan-limit strong { color: var(--sc-ink); font-size: 1.3rem; line-height: 1.15; font-weight: 820; letter-spacing: -0.02em; }
+.sc-plan-limit span { color: #67542a; font-size: 0.84rem; font-weight: 650; }
+.sc-plan-explain { max-width: 770px; margin: 22px auto 0; color: #40506a; text-align: center; font-size: 0.88rem; }
+.sc-plan-card ul { margin: 20px 0 0; padding: 20px 0 0; border-top: 1px solid var(--sc-line); list-style: none; }
 .sc-plan-card li { position: relative; margin: 0 0 11px; padding-left: 23px; color: #40506a; font-size: 0.9rem; }
 .sc-plan-card li::before { content: "✓"; position: absolute; left: 0; color: var(--sc-blue); font-weight: 900; }
 .sc-pack-note { max-width: 810px; display: flex; align-items: center; gap: 20px; margin: 26px auto 0; padding: 20px 24px; background: var(--sc-gold-soft); border: 1px solid #e8d39a; border-radius: 16px; }
